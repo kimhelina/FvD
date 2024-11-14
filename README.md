@@ -45,7 +45,12 @@ hier de naam van de pagina
 #### Screenshot(s) van de tweede pagina (small screen):
 
 hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/mobile-product1.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/mobile-product2.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/mobile-product3.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/mobile-product4.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/mobile-product5.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/mobile-product6.png" width="375px" alt="Dit is een footer van de pagina">
 
 </details>
 
