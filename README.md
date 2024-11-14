@@ -63,6 +63,14 @@ hier de naam van de pagina
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 
+- De screenreader werkte goed, maar las soms de code elementen voor wat niet nodig is voor de gebruiker.
+- De tab-index is logisch georganiseerd
+- Bij de navigatiebar zegt de screenreader 'article' in plaats van wat de icoon betekent en waar die naartoe navigeert
+- De screenreader leest per sectie 'article' en daarbij is er geen extra toelichting wat voor 'article'/ sectie het inhoudt
+- Bij knoppen zegt de screenreader dat de gebruiker op een 'group' is in plaats van button
+- De screenreader leest de alt-teksten van de imgaes niet voor en het is niet te selecteren
+- Op het product pagina is de radio-button niet selecteerbaar
+
 </details>
 
 ## Breakdownschets (week 1)
