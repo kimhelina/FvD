@@ -39,7 +39,8 @@ JoMalone/ Britse parfum merk
 #### Screenshot(s) van de eerste pagina (small screen):
 
 hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/mobile-index1.png" width="375px" alt="De eerste banner wanneer de gebruiker op de website komt">
+<img src="readme-images/mobile-index2.png" width="375px" alt="Het product banner wanneer de gebruiker op de website komt">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
