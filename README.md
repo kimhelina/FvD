@@ -63,6 +63,8 @@ hier de naam van de pagina
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 
+### A third-level heading Screenreader
+
 - De screenreader werkte goed, maar las soms de code elementen voor wat niet nodig is voor de gebruiker.
 - De tab-index is logisch georganiseerd
 - Bij de navigatiebar zegt de screenreader 'article' in plaats van wat de icoon betekent en waar die naartoe navigeert
