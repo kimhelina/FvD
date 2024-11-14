@@ -63,16 +63,29 @@ hier de naam van de pagina
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-### A third-level heading Screenreader
+#### Screenreader
+
+Positief
+
+- De tab-index is logisch georganiseerd
+
+Negatief
 
 - De screenreader werkte goed, maar las soms de code elementen voor wat niet nodig is voor de gebruiker.
-- De tab-index is logisch georganiseerd
 - Bij de navigatiebar zegt de screenreader 'article' in plaats van wat de icoon betekent en waar die naartoe navigeert
 - De screenreader leest per sectie 'article' en daarbij is er geen extra toelichting wat voor 'article'/ sectie het inhoudt
 - Bij knoppen zegt de screenreader dat de gebruiker op een 'group' is in plaats van button
-- De screenreader leest de alt-teksten van de imgaes niet voor en het is niet te selecteren
 - Op het product pagina is de radio-button niet selecteerbaar
+- De screenreader leest de alt-teksten van de imgaes niet voor en het is niet te selecteren
 
+#### WCAG-checklist
+
+- De content is goed; duiedlijke taalgebrui + passende foto's
+- Globale code;
+- Keyboard; de tab-indez is in logische volgorde (tab & shift+tab)
+- Mobile and touch; er is sprake van horizontale scrolling, maar er is een button waar de gebruiker erop kan klikken
+  - Bij index (begin pagina) is breadcrumbs die klikbaar zijn, maar die te klein is erop te klikken. De gebruiker kan **wel** erop scrollen (horizontale scroll)
+- Headings; er is **geen** H1!!! Daarom skipt hij de heading levels, omdat de pagina met <p> en daarna meteeen <h2> komt.
 </details>
 
 ## Breakdownschets (week 1)
