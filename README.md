@@ -22,7 +22,7 @@ rood
 
 #### Je focus:
 
-responsive
+responsive (als er nog tijd over is ook service)
 
 </details>
 
@@ -85,7 +85,9 @@ Negatief
 - Keyboard; de tab-indez is in logische volgorde (tab & shift+tab)
 - Mobile and touch; er is sprake van horizontale scrolling, maar er is een button waar de gebruiker erop kan klikken
   - Bij index (begin pagina) is breadcrumbs die klikbaar zijn, maar die te klein is erop te klikken. De gebruiker kan **wel** erop scrollen (horizontale scroll)
-- Headings; er is **geen** H1!!! Daarom skipt hij de heading levels, omdat de pagina met <p> en daarna meteeen <h2> komt.
+- Headings; er is **geen** H1!!! Daarom skipt hij de heading levels, omdat de pagina met p en daarna meteeen h2 komt.
+- De website gebruikt geen ol, ul voor list-items voor de navigatiebar, etc.
+- Images;
 </details>
 
 ## Breakdownschets (week 1)
