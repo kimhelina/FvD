@@ -29,7 +29,7 @@
 }
 @font-face {
   font-family: "MaloneSerif-Regular";
-  src: url("fonts/MaloneSerif-Regular.woff2");
+  src: url("fonts/MaloneSerif-SemiBold.woff2");
 }
 @font-face {
   font-family: "MaloneSerif-Bold";
@@ -51,4 +51,34 @@ body {
 h1 h2 {
   font-family: "MaloneSerif-Bold", "Times New Roman", Times, serif;
   color: var(--color-text);
+}
+
+/****************/
+/* 		NAVBAR	 */
+/****************/
+@media only screen and (max-width: 667px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+  li:nth-child(1) {
+    order: 1;
+  }
+  li:nth-child(2) {
+    order: 0;
+  }
+  li:nth-child(3) {
+    order: 2;
+  }
+  li:nth-child(4) {
+    order: 3;
+  }
+
+  .icon {
+    max-width: 1.8em;
+    height: auto;
+  }
 }
