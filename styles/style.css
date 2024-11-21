@@ -16,6 +16,7 @@
   --color-background: #fcf9ee;
   --white: #fff;
   --large-button-background: #212121;
+  --button-enabled-background: #f7f4e9;
 }
 
 /* FONTS */
@@ -57,6 +58,10 @@ h1 h2 {
 /* 		NAVBAR	 */
 /****************/
 @media only screen and (max-width: 667px) {
+  main {
+    padding: 0.5em;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
