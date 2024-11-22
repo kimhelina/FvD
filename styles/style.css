@@ -1,3 +1,28 @@
+/* FONTS */
+@font-face {
+  font-family: "LarsMalone";
+  src: url("../fonts/LarsMalonePro-Bold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "LarsMalone";
+  src: url("../fonts/LarsMalonePro-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MaloneSerif";
+  src: url("../fonts/MaloneSerif-SemiBold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "MaloneSerif";
+  src: url("../fonts/MaloneSerif-Bold.woff2");
+  font-weight: 400;
+  /* font-size: 24px; */
+  /* line-height: 1.3; */
+  /* text-transform: capitalize; */
+}
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -19,27 +44,6 @@
   --button-enabled-background: #f7f4e9;
 }
 
-/* FONTS */
-@font-face {
-  font-family: "LarsMalone-Bold";
-  src: url("fonts/LarsMalonePro-Bold.woff2");
-}
-@font-face {
-  font-family: "LarsMalone-Regular";
-  src: url("fonts/LarsMalonePro-Regular.woff2");
-}
-@font-face {
-  font-family: "MaloneSerif-Regular";
-  src: url("fonts/MaloneSerif-SemiBold.woff2");
-}
-@font-face {
-  font-family: "MaloneSerif-Bold";
-  src: url("fonts/MaloneSerif-Bold.woff2");
-  font-size: 24px;
-  line-height: 1.3;
-  text-transform: capitalize;
-}
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -49,41 +53,40 @@ body {
   color: var(--color-text);
 }
 
-h1 h2 {
-  font-family: "MaloneSerif-Bold", "Times New Roman", Times, serif;
+h1,
+h2 {
+  font-family: "MaloneSerif", "Times New Roman", Times, serif;
   color: var(--color-text);
 }
 
 /****************/
 /* 		NAVBAR	 */
 /****************/
-@media only screen and (max-width: 667px) {
-  main {
-    padding: 0.5em;
-  }
+main {
+  padding: 0.5em;
+}
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-  }
-  li:nth-child(1) {
-    order: 1;
-  }
-  li:nth-child(2) {
-    order: 0;
-  }
-  li:nth-child(3) {
-    order: 2;
-  }
-  li:nth-child(4) {
-    order: 3;
-  }
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+li:nth-child(1) {
+  order: 1;
+}
+li:nth-child(2) {
+  order: 0;
+}
+li:nth-child(3) {
+  order: 2;
+}
+li:nth-child(4) {
+  order: 3;
+}
 
-  .icon {
-    max-width: 1.8em;
-    height: auto;
-  }
+.icon {
+  width: 1.8em;
+  height: auto;
 }

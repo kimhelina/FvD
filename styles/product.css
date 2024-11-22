@@ -1,17 +1,6 @@
-:root {
-  /* COLORS */
-  --color-text: #1c1c1c;
-  --color-background: #fcf9ee;
-  --white: #fff;
-  --large-button-background: #212121;
-  --button-enabled-background: #f7f4e9;
-}
-
-@media only screen and (max-width: 667px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* BUTTONS */
