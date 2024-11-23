@@ -3,6 +3,21 @@ img {
   height: auto;
 }
 
+/* COLLAPSIBLE CONTENT */
+.collapsible-content {
+  display: none; /* Initially hidden */
+  margin-left: 1em;
+}
+
+.collapsible-header {
+  cursor: pointer;
+  padding: 0.5em 0;
+}
+
+.collapsible-header:hover {
+  color: var(--accent-color);
+}
+
 /* BUTTONS */
 button {
   background-color: var(--button-enabled-background);

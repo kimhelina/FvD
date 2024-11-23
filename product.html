@@ -6,28 +6,74 @@
     <link href="styles/style.css" rel="stylesheet" />
     <link href="styles/product.css" rel="stylesheet" />
 
-    <title>Product Page</title>
+    <script src="scripts/script.js"></script>
+
+    <title>Engish Pear & Freesia Cologne</title>
   </head>
   <body>
-    <!-- NAVBAR -->
+    <!------ HEADER ------>
     <header>
+      <!-- LOGO -->
       <a href="index.html"
         ><img src="images/JoMaloneLogo.png" alt="logo of jo malone"
       /></a>
-      <button>
+
+      <!-- HAMBURGER ICON -->
+      <button aria-label="Open Menu" id="menu-toggle">
         <img
           src="images/icons/hamburger.svg"
           class="icon"
           alt="hamburger menu icon"
         />
       </button>
-      <!-- NAVBAR MAKEN wanneer die openklapt-->
-      <nav>
+
+      <!-- HAMBURGER MENU OPEN -->
+      <nav id="main-nav">
         <ul>
-          <li></li>
+          <li>
+            <a href="#"
+              >christmas <img class="icon" src="images/icons/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >men<img class="icon" src="images/icons/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >cologne<img class="icon" src="images/icons/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >home<img class="icon" src="images/icons/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >bath & body<img class="icon" src="images/icons/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >services<img class="icon" src="images/icons/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >brand<img class="icon" src="images/icons/arrow-right.svg"
+            /></a>
+          </li>
+          <li><a href="#">christmas</a></li>
+          <li><a href="#">account</a></li>
+          <li><a href="#">wishlist</a></li>
+          <li><a href="#">bag</a></li>
         </ul>
       </nav>
-      <button>
+
+      <!-- SEARCHBAR -->
+      <button aria-label="Search">
         <img src="images/icons/search.svg" class="icon" alt="search icon" />
       </button>
       <search>
@@ -38,7 +84,9 @@
           <button>search</button>
         </form>
       </search>
-      <button>
+
+      <!-- SHOPPINGBAG -->
+      <button aria-label="Shopping bag">
         <img
           src="images/icons/shopping-bag.png"
           class="icon"
@@ -47,105 +95,182 @@
       </button>
     </header>
 
+    <!------ MAIN CONTENT ------>
     <main>
+      <!-- PRODUCT INTRO -->
       <h1>English Pear & Freesia Cologne</h1>
       <img
         src="images/productPage/bannerimg.jpg"
         alt="banner image with pear, freesia and patchouli"
       />
 
-      <!-- page back nav -->
-      <img src="images/icons/arrow-left.svg" class="icon" />
-      <p>Colognes</p>
+      <!-- PRODUCT DETAILS -->
+      <section class="product-details">
+        <!-- page back nav -->
+        <img src="images/icons/arrow-left.svg" class="icon" />
+        <p>Colognes</p>
 
-      <img src="images/icons/star_filled.svg" class="icon" />
-      <img src="images/icons/star_filled.svg" class="icon" />
-      <img src="images/icons/star_filled.svg" class="icon" />
-      <img src="images/icons/star_filled.svg" class="icon" />
-      <img src="images/icons/star_filled.svg" class="icon" />
-      <p>2762 reviews</p>
+        <div>
+          <img src="images/icons/star_filled.svg" class="icon" />
+          <img src="images/icons/star_filled.svg" class="icon" />
+          <img src="images/icons/star_filled.svg" class="icon" />
+          <img src="images/icons/star_filled.svg" class="icon" />
+          <img src="images/icons/star_filled.svg" class="icon" />
+          <p>2762 reviews</p>
+        </div>
 
-      <img
-        src="images/productPage/englishpearandfreesia.png"
-        alt="product image of english pear and freesie eau de parfume 100 ml"
-      />
-      <p>€ 146,00</p>
-      <p>
-        The essence of autumn. The sensuous freshness of justripe pears is
-        wrapped in a bouquet of white freesias, and mellowd by amber, patchouli
-        and woods.
-        <!-- add read more btn -->
-        <span>Lucious and golden</span>
-      </p>
+        <img
+          src="images/productPage/englishpearandfreesia.png"
+          alt="product image of english pear and freesie eau de parfume 100 ml"
+        />
+        <p>€ 146,00</p>
+        <p>
+          The essence of autumn. The sensuous freshness of justripe pears is
+          wrapped in a bouquet of white freesias, and mellowd by amber,
+          patchouli and woods.
+          <!-- add read more btn -->
+          <span>Lucious and golden</span>
+        </p>
 
-      <button class="">50ml</button>
-      <button>100ml</button>
-      <button>30ml</button>
-      <button>Add To Bag</button>
+        <div>
+          <button aria-label="Select 50ml">50ml</button>
+          <button aria-label="Select 100ml">100ml</button>
+          <button aria-label="Select 30ml">30ml</button>
+        </div>
+
+        <button>Add To Bag</button>
+      </section>
 
       <!-- Description -->
-      <button>add engraving</button>
-      <img src="images/productPage/howtoimg.jpg" />
-      <button>share</button>
-      <button>wishlist <img src="images/icons/bookmark.svg" /></button>
+      <section>
+        <button>add engraving</button>
+        <img src="images/productPage/howtoimg.jpg" />
+        <button>share</button>
+        <button>
+          wishlist <img src="images/icons/bookmark.svg" alt="Bookmark Icon" />
+        </button>
+      </section>
 
-      <ul>
-        <li>
-          <h2>Ingredients</h2>
-          <p>
-            Ingredients: Alcohol Denat., Water\Aqua\Eau, Fragrance (Parfum),
-            Limonene, Geraniol, Linalool, Hexyl Cinnamal, Citronellol, Citral,
-            Farnesol, Bht
-          </p>
-          <p>
-            Please be aware that ingredient lists may change or vary from time
-            to time. Please refer to the ingredient list on the product package
-            you receive for the most up to date list of ingredients.
-          </p>
-        </li>
-        <li>
-          <h2>How Does It Work</h2>
-          <p>
-            Spritz generously onto your wrists, neck and pulse points – your
-            body heat will help to diffuse the fragrance as the day goes on.
-            Wear alone or layer with another Cologne or your favourite Bath &
-            Body products.
-          </p>
-        </li>
-        <li>
-          <h2>Tasting Notes</h2>
-          <!-- cards -->
+      <!-- DETAILS SECTIONS -->
+      <section id="details-section">
+        <ul>
+          <li>
+            <h2 class="collapsible-header">Ingredients</h2>
+            <p>
+              Ingredients: Alcohol Denat., Water\Aqua\Eau, Fragrance (Parfum),
+              Limonene, Geraniol, Linalool, Hexyl Cinnamal, Citronellol, Citral,
+              Farnesol, Bht
+            </p>
+            <p>
+              Please be aware that ingredient lists may change or vary from time
+              to time. Please refer to the ingredient list on the product
+              package you receive for the most up to date list of ingredients.
+            </p>
+          </li>
+          <li>
+            <h2 class="collapsible-header">How Does It Work</h2>
+            <p>
+              Spritz generously onto your wrists, neck and pulse points – your
+              body heat will help to diffuse the fragrance as the day goes on.
+              Wear alone or layer with another Cologne or your favourite Bath &
+              Body products.
+            </p>
+          </li>
+          <li>
+            <h2 class="collapsible-header">Tasting Notes</h2>
+            <!-- cards -->
+            <ul>
+              <li>
+                <img src="images/productPage/Pear_Mobile.png" />
+                <p>Top Note</p>
+                <p>William Pear</p>
+                <p>
+                  This accord of mellow scented fruit is fresh and ripe with a
+                  juicy facet.
+                </p>
+              </li>
+              <li>
+                <img src="images/productPage/Freesia_Mobile.png" />
+                <p>Heart Note</p>
+                <p>Freesia</p>
+                <p>
+                  Quintessentially English, cool white freesias imbue the heart
+                  of the fragrance with a delicate yet distinctive scent.
+                </p>
+              </li>
+              <li>
+                <img src="images/productPage/Patchouli_Mobile.png" />
+                <p>Base Note</p>
+                <p>Patchouli</p>
+                <p>
+                  A sensuously deep, woody note that enhances the longevity of
+                  the fragrance.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <article class="footer-container">
+        <!-- SIGNUP FORM -->
+        <form>
+          <label>Sign Up</label>
+          <input type="email" value="Email Adress" />
+        </form>
+        <p>Please select your gender</p>
+
+        <!-- GENDER RADIO -->
+        <form id="gender-form">
           <ul>
             <li>
-              <img src="images/productPage/Pear_Mobile.png" />
-              <p>Top Note</p>
-              <p>William Pear</p>
-              <p>
-                This accord of mellow scented fruit is fresh and ripe with a
-                juicy facet.
-              </p>
+              <input type="radio" value="Female" />
+              <label>Female</label>
             </li>
             <li>
-              <img src="images/productPage/Freesia_Mobile.png" />
-              <p>Heart Note</p>
-              <p>Freesia</p>
-              <p>
-                Quintessentially English, cool white freesias imbue the heart of
-                the fragrance with a delicate yet distinctive scent.
-              </p>
+              <input type="radio" value="Male" />
+              <label>Male</label>
             </li>
             <li>
-              <img src="images/productPage/Patchouli_Mobile.png" />
-              <p>Base Note</p>
-              <p>Patchouli</p>
-              <p>
-                A sensuously deep, woody note that enhances the longevity of the
-                fragrance.
-              </p>
+              <input type="radio" value="Other" />
+              <label>Other</label>
             </li>
           </ul>
-        </li>
-      </ul>
-    </main>
+        </form>
+
+        <ul>
+          <li>
+            <span>Help & Contact us</span>
+            <img class="icon" src="images/icons/arrow-down.svg" />
+          </li>
+          <li>
+            <span>Visit & Explore</span>
+            <img class="icon" src="images/icons/arrow-down.svg" />
+          </li>
+          <li>
+            <span>Our Company</span>
+            <img class="icon" src="images/icons/arrow-down.svg" />
+          </li>
+          <li>
+            <span>Social</span>
+            <img class="icon" src="images/icons/arrow-down.svg" />
+          </li>
+        </ul>
+
+        <a href="#">Change Country</a>
+
+        <ul>
+          <li><a href="#">Terms of Sale</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+
+        <!-- COPYRIGHT & LINKS -->
+        <p>&copy; 2024 Jo Malone. All Rights Reserved.</p>
+      </article>
+    </footer>
   </body>
 </html>
