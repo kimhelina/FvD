@@ -94,11 +94,15 @@ main {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-  padding: 0 1em;
+  padding: 1em 2em;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
+  position: relative;
 }
 header img {
   width: 100%;
@@ -112,7 +116,7 @@ header {
   list-style-type: none;
 }
 
-header:nth-child(1) {
+/* header:nth-child(1) {
   order: 1;
 }
 header:nth-child(2) {
@@ -120,6 +124,22 @@ header:nth-child(2) {
 }
 header:nth-child(3) {
   order: 2;
+} */
+
+header > *:nth-child(1) {
+  order: 2; /* 로고 */
+}
+header > *:nth-child(2) {
+  order: 1; /* 햄버거 메뉴 */
+}
+header > *:nth-child(3) {
+  order: 3; /* 내비게이션 메뉴 */
+}
+header > *:nth-child(4) {
+  order: 4; /* 검색 아이콘 */
+}
+header > *:nth-child(5) {
+  order: 10; /* 쇼핑백 아이콘 */
 }
 
 /****************/
