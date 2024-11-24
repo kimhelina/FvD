@@ -3,6 +3,34 @@ img {
   height: auto;
 }
 
+/* BUTTONS */
+button {
+  background-color: var(--button-enabled-background);
+  color: var(--color-text);
+}
+button:focus {
+  outline: var(--color-text);
+}
+
+/* BACK TO COLOGNES */
+#back-to-colognes {
+  display: flex;
+  align-items: center;
+  padding: 2em 0 2em 0;
+}
+#back-to-colognes img {
+  height: 1em;
+}
+
+/* RATING
+#rating {
+  display: flex;
+  flex-direction: row;
+}
+#rating img {
+  width: 6em;
+} */
+
 /* COLLAPSIBLE CONTENT */
 .collapsible-content {
   display: none; /* Initially hidden */
@@ -16,13 +44,4 @@ img {
 
 .collapsible-header:hover {
   color: var(--accent-color);
-}
-
-/* BUTTONS */
-button {
-  background-color: var(--button-enabled-background);
-  color: var(--color-text);
-}
-button:focus {
-  outline: var(--color-text);
 }

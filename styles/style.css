@@ -71,6 +71,12 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "LarsMalone";
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
 button {
   border: none;
   background-color: var(--button-bg);
@@ -116,16 +122,6 @@ header {
   list-style-type: none;
 }
 
-/* header:nth-child(1) {
-  order: 1;
-}
-header:nth-child(2) {
-  order: 0;
-}
-header:nth-child(3) {
-  order: 2;
-} */
-
 header > *:nth-child(1) {
   order: 2; /* 로고 */
 }
@@ -169,7 +165,7 @@ nav ul li {
 
 /* VOOR ALLE ICONEN */
 .icon {
-  width: 1.8em;
+  width: 1.3em;
   height: auto;
 }
 
