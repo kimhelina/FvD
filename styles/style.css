@@ -45,7 +45,7 @@
   --primary-color: #212121;
   --button-bg: #f7f4e9;
   --accent-color: #f4d03f;
-  --light-grey: #707070;
+  --light-grey: #a7a7a7;
 }
 
 /****************/
@@ -108,7 +108,7 @@ header {
   margin-right: auto;
   width: 100%;
 
-  position: relative;
+  position: sticky;
 }
 header img {
   width: 100%;
@@ -142,18 +142,29 @@ header > *:nth-child(6) {
 /* 		NAVBAR OPEN	 */
 /****************/
 nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: 0;
+
+  padding: 1em;
+
+  overflow-x: auto;
+
+  transform: translateX(-100%);
+  transition: 0.2s;
 }
 
-nav.active {
-  display: block;
+nav .showMenu {
+  transform: translateX(0);
+  display: flex;
 }
 
 nav ul {
   display: flex;
 
   list-style: none;
-  justify-content: center;
   text-align: left;
   gap: 1em;
 }

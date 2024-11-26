@@ -3,6 +3,18 @@ img {
   height: auto;
 }
 
+/* DESCRIPTIONS */
+details {
+  padding: 2.2em 1em;
+  border-top: 0.5px solid var(--light-grey);
+}
+
+summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* BUTTONS */
 button {
   background-color: var(--button-enabled-background);

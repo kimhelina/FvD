@@ -1,21 +1,14 @@
-// JavaScript for toggling the navigation menu
-const menuToggle = document.getElementById("menu-toggle");
-const mainNav = document.getElementById("main-nav");
+const hamburgerBtn = document.querySelector("#hamburgerBtn");
+const navMenu = document.querySelector("nav");
 
-menuToggle.addEventListener("click", () => {
-  mainNav.classList.toggle("active");
+// Toggle the menu visibility
+hamburgerBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("showMenu");
 });
 
-// JavaScript for collapsible sections
-const collapsibleHeaders = document.querySelectorAll(".collapsible-header");
-
-collapsibleHeaders.forEach((header) => {
-  header.addEventListener("click", () => {
-    const content = header.nextElementSibling; // The <ul> below <h2>
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+// Optional: Close the menu if clicked outside
+document.addEventListener("click", (e) => {
+  if (!navMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+    navMenu.classList.remove("showMenu");
+  }
 });
