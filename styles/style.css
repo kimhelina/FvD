@@ -122,31 +122,31 @@ header {
   list-style-type: none;
 }
 
-header > *:nth-child(1) {
-  order: 2; /* 로고 */
+header > :nth-child(1) {
+  order: 2;
 }
 header > *:nth-child(2) {
-  order: 1; /* 햄버거 메뉴 */
-}
-header > *:nth-child(3) {
-  order: 3; /* 내비게이션 메뉴 */
+  order: 1;
 }
 header > *:nth-child(4) {
-  order: 4; /* 검색 아이콘 */
+  order: 3;
 }
 header > *:nth-child(5) {
-  order: 10; /* 쇼핑백 아이콘 */
+  order: 4;
+}
+header > *:nth-child(6) {
+  order: 5;
 }
 
 /****************/
 /* 		NAVBAR OPEN	 */
 /****************/
 nav {
-  display: none; /* Initially hidden */
+  display: none;
 }
 
 nav.active {
-  display: block; /* Shown when menu is toggled */
+  display: block;
 }
 
 nav ul {
@@ -174,14 +174,16 @@ button {
   border: none;
 }
 
-/* ------- FOOTER ------ */
+/****************/
+/* 		 FOOTER 	 */
+/****************/
 footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   width: 100%; /* 가로 전체 차지 */
-  box-sizing: border-box; /* 패딩 포함한 크기 계산 */
+
   padding: 1em; /* 여백 추가 */
 }
 footer p {
@@ -243,5 +245,6 @@ footer li {
   justify-content: space-between;
 }
 
-@media (width > 48em) {
+article {
+  width: 100%;
 }

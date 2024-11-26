@@ -22,26 +22,6 @@ button:focus {
   height: 1em;
 }
 
-/* RATING
-#rating {
-  display: flex;
-  flex-direction: row;
-}
-#rating img {
-  width: 6em;
-} */
-
-/* COLLAPSIBLE CONTENT */
-.collapsible-content {
-  display: none; /* Initially hidden */
-  margin-left: 1em;
-}
-
-.collapsible-header {
-  cursor: pointer;
-  padding: 0.5em 0;
-}
-
-.collapsible-header:hover {
-  color: var(--accent-color);
+h1 {
+  max-width: 8em;
 }
