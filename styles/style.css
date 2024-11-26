@@ -184,7 +184,9 @@ footer {
 
   width: 100%; /* 가로 전체 차지 */
 
-  padding: 1em; /* 여백 추가 */
+  padding: 3em 1em; /* 여백 추가 */
+
+  background-color: var(--white);
 }
 footer p {
   display: flex;
@@ -203,6 +205,8 @@ footer input[type="email"] {
   padding: 1em 8em 1em 0.5em;
   align-items: flex-start;
   color: var(--light-grey);
+
+  width: 100%;
 }
 
 #signUp {
@@ -214,35 +218,34 @@ footer input[type="email"] {
 #gender-form {
   display: flex;
   flex-direction: column;
-  gap: 1em; /* 각 그룹 간 일정한 간격 */
+  gap: 1em;
 }
 #gender-form ul {
   display: flex;
   flex-direction: column;
-  gap: 0.5em; /* 각 라디오 버튼-레이블 간 간격 */
 }
 #gender-form li {
   display: flex;
   flex-direction: row;
-  align-items: center; /* 버튼과 텍스트를 수직 정렬 */
-  gap: 0.5em; /* 버튼과 레이블 간 일정한 간격 */
+  gap: 0.5em;
 }
 #gender-form input[type="radio"] ~ label {
   font-weight: 500%;
-  padding: 0.5em 0 0.5em 4em;
   position: relative;
   height: 1.5em;
-  accent-color: var(--color-text);
 }
 
 /* OTHER  */
 footer ul {
+  gap: 2em;
 }
 footer li {
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
+
+  gap: 1em;
 }
 
 article {
