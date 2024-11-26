@@ -9,10 +9,30 @@ details {
   border-top: 0.5px solid var(--light-grey);
 }
 
+details img {
+  width: 10em;
+}
+
 summary {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+/* CARDS */
+details ul {
+  display: flex;
+  width: 100vw;
+  list-style: none;
+  gap: 3em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+details ul li {
+  width: 40%;
+  flex-shrink: 0;
+}
+details button {
 }
 
 /* BUTTONS */

@@ -144,25 +144,20 @@ header > *:nth-child(6) {
 nav {
   display: flex;
   flex-direction: column;
+  background-color: var(--color-background);
 
   position: fixed;
-
-  height: 100vh;
   width: 86%;
   z-index: 1000;
   left: 0;
+  top: 0;
 
   padding: 1em;
-
   overflow-y: auto;
 
   transform: translateX(-100%);
   transition: 0.2s;
   visibility: hidden;
-}
-
-nav::backdrop {
-  background-color: var(--color-text) 30%;
 }
 
 nav.showMenu {
@@ -173,14 +168,15 @@ nav.showMenu {
 nav ul {
   display: flex;
   flex-direction: column;
+
   list-style: none;
   text-align: left;
-  gap: 1em;
 
-  background-color: var(--color-background);
+  gap: 1em;
+  height: 100vh;
 }
 
-nav li {
+nav li a {
   display: flex;
   justify-content: space-between;
   padding: 0.5em;

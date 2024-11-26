@@ -19,3 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-direction]");
+  if (!button) return;
+
+  const direction = button.getAttribute("data-direction");
+  // <ul> is the parent of the buttons
+  const carousel = button.parentElement;
+
+  // Width to scroll
+  const scrollAmount = carousel.clientWidth;
+  if (direction === "left") {
+    carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  } else if (direction === "right") {
+    carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  }
+});
