@@ -60,15 +60,26 @@
     <button aria-label="Search">
       <img src="images/icons/search.svg" class="icon" alt="search icon" />
     </button>
-    <!-- SEARCHFORM -->
-    <search>
-      <form>
-        <label>
-          <input type="search" placeholder="Start with typing" />
-        </label>
-        <button>search</button>
-      </form>
-    </search>
+    <!-- Search Pop-Up -->
+    <section aria-hidden="true">
+      <div></div> <!-- Overlay -->
+      <div>
+        <button aria-label="Close Search">&times;</button>
+        <form>
+          <input type="text" placeholder="Start typing" />
+          <button>
+            <!----여기 버튼 아이콘 만들어야함 마이크 아이콘---->
+            <img src="images/icons/search.svg" alt="Search Icon" />
+          </button>
+        </form>
+        <p>NEED A LITTLE INSPIRATION?</p>
+        <div role="navigation" aria-label="Inspiration Navigation">
+          <button aria-label="Previous Option">&lt;</button>
+          <button> COMPLIMENTARY FESTIVE DUO </button>
+          <button aria-label="Next Option">&gt;</button>
+        </div>
+      </div>
+    </section>
 
     <!-- SHOPPINGBAG -->
     <button aria-label="Shopping bag">
@@ -204,8 +215,7 @@
                 </p>
               </li>
               <button data-direction="right">
-                <img class="icon" src="images/icons/arrow-right.svg">
-              </button>
+                <img class="icon" src="images/icons/arrow-right.svg"></button>
             </ul>
           </details>
         </section>
