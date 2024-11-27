@@ -3,10 +3,21 @@ img {
   height: auto;
 }
 
+/* BUTTONS */
+button {
+  background-color: var(--button-enabled-background);
+  color: var(--color-text);
+  cursor: pointer;
+}
+button:focus {
+  outline: var(--color-text);
+}
+
 /* DESCRIPTIONS */
 details {
   padding: 2.2em 1em;
   border-top: 0.5px solid var(--light-grey);
+  position: relative;
 }
 
 details img {
@@ -22,26 +33,35 @@ summary {
 /* CARDS */
 details ul {
   display: flex;
-  width: 100vw;
+  max-width: 100vw;
   list-style: none;
   gap: 3em;
   overflow-x: auto;
   scroll-behavior: smooth;
+  position: relative;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 details ul li {
   width: 40%;
   flex-shrink: 0;
 }
-details button {
-}
+details ul button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 
-/* BUTTONS */
-button {
-  background-color: var(--button-enabled-background);
-  color: var(--color-text);
+  top: 50%;
+  width: 2em;
+  cursor: pointer;
 }
-button:focus {
-  outline: var(--color-text);
+details ul button:nth-child(1) {
+  left: 0;
+}
+details ul button:nth-child(2) {
+  right: 0;
 }
 
 /* BACK TO COLOGNES */
