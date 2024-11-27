@@ -373,12 +373,24 @@ footer p {
   align-items: flex-start;
   font-size: 0.8em;
 }
-footer form {
+footer li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+footer section:nth-child(1) {
+  padding-bottom: 3em;
+  width: 100%;
+}
+
+/*----- EMAIL FORM -----*/
+footer form:nth-child(1) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-footer input[type="email"] {
+footer form:nth-child(1) input[type="email"] {
   border: none;
   border-bottom: 1px solid var(--color-text);
 
@@ -389,42 +401,27 @@ footer input[type="email"] {
   width: 100%;
 }
 
-#signUp {
-  padding-bottom: 3em;
-  width: 100%;
-}
-
-/* GENDER FORM */
-#gender-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-#gender-form ul {
+/*---- GENDER FORM -----*/
+footer form:nth-child(2) {
   display: flex;
   flex-direction: column;
 }
-#gender-form li {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
+footer section:nth-child(1) li {
+  text-align: start;
+  padding: 0.2em 0em;
+  gap: 2em;
 }
-#gender-form input[type="radio"] ~ label {
-  font-weight: 500%;
-  position: relative;
-  height: 1.5em;
+input[type="radio"] {
+  cursor: pointer;
+  width: 1.8em;
 }
 
 /* OTHER  */
-footer ul {
+footer section:nth-child(2) ul {
   gap: 2em;
 }
-footer li {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+footer section:nth-child(2) li {
   justify-content: space-between;
-
   gap: 1em;
 }
 
