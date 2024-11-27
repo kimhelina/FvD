@@ -210,7 +210,7 @@ section[aria-hidden] {
 }
 
 /* Background Overlay */
-section[aria-hidden] > div:nth-of-type(1) {
+section[aria-hidden] > section:nth-of-type(1) {
   position: absolute;
   top: 0;
   left: 0;
@@ -221,7 +221,7 @@ section[aria-hidden] > div:nth-of-type(1) {
 }
 
 /* Pop-Up Container */
-section[aria-hidden] > div:nth-of-type(2) {
+section[aria-hidden] > section:nth-of-type(2) {
   position: relative;
   width: 100%;
   height: 90%;
@@ -234,7 +234,9 @@ section[aria-hidden] > div:nth-of-type(2) {
 }
 
 /* Close Button */
-section[aria-hidden] > div:nth-of-type(2) > button[aria-label="Close Search"] {
+section[aria-hidden]
+  > section:nth-of-type(2)
+  > button[aria-label="Close Search"] {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -246,7 +248,7 @@ section[aria-hidden] > div:nth-of-type(2) > button[aria-label="Close Search"] {
 }
 
 /* Input Field and Button */
-section[aria-hidden] > div:nth-of-type(2) > form {
+section[aria-hidden] > section:nth-of-type(2) > form {
   display: flex;
   position: relative;
   width: 100%;
@@ -254,14 +256,14 @@ section[aria-hidden] > div:nth-of-type(2) > form {
   margin-top: 3rem;
 }
 
-section[aria-hidden] > div:nth-of-type(2) > p {
+section[aria-hidden] > section:nth-of-type(2) > p {
   margin-top: 30%;
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
 }
 
-section[aria-hidden] > div:nth-of-type(2) > form > input[type="text"] {
+section[aria-hidden] > section:nth-of-type(2) > form > input[type="text"] {
   flex: 1;
   padding: 0.7em 2.5em 0.7em 1em;
   font-size: 1.2rem;
@@ -271,7 +273,7 @@ section[aria-hidden] > div:nth-of-type(2) > form > input[type="text"] {
   outline: none;
 }
 
-section[aria-hidden] > div:nth-of-type(2) > form > button {
+section[aria-hidden] > section:nth-of-type(2) > form > button {
   position: absolute;
   top: 50%;
   right: 0.5em;
@@ -282,13 +284,13 @@ section[aria-hidden] > div:nth-of-type(2) > form > button {
   padding: 0;
 }
 
-section[aria-hidden] > div:nth-of-type(2) > form > button > img {
+section[aria-hidden] > section:nth-of-type(2) > form > button > img {
   width: 1.5rem;
   height: auto;
 }
 
 /* Navigation Arrows and Buttons */
-section[aria-hidden] > div:nth-of-type(2) > div[role="navigation"] {
+section[aria-hidden] > section:nth-of-type(2) > div[role="navigation"] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,7 +299,10 @@ section[aria-hidden] > div:nth-of-type(2) > div[role="navigation"] {
   position: relative;
 }
 
-section[aria-hidden] > div:nth-of-type(2) > div[role="navigation"] > button {
+section[aria-hidden]
+  > section:nth-of-type(2)
+  > section[role="navigation"]
+  > button {
   background: none;
   border: none;
   cursor: pointer;
@@ -307,12 +312,12 @@ section[aria-hidden] > div:nth-of-type(2) > div[role="navigation"] > button {
 }
 
 section[aria-hidden]
-  > div:nth-of-type(2)
-  > div[role="navigation"]
+  > section:nth-of-type(2)
+  > section[role="navigation"]
   > button:nth-of-type(1),
 section[aria-hidden]
-  > div:nth-of-type(2)
-  > div[role="navigation"]
+  > section:nth-of-type(2)
+  > section[role="navigation"]
   > button:nth-of-type(3) {
   position: absolute;
   top: 50%;
@@ -320,22 +325,22 @@ section[aria-hidden]
 }
 
 section[aria-hidden]
-  > div:nth-of-type(2)
-  > div[role="navigation"]
+  > section:nth-of-type(2)
+  > section[role="navigation"]
   > button:nth-of-type(1) {
   left: 0;
 }
 
 section[aria-hidden]
-  > div:nth-of-type(2)
-  > div[role="navigation"]
+  > section:nth-of-type(2)
+  > section[role="navigation"]
   > button:nth-of-type(3) {
   right: 0;
 }
 
 section[aria-hidden]
-  > div:nth-of-type(2)
-  > div[role="navigation"]
+  > section:nth-of-type(2)
+  > section[role="navigation"]
   > button:nth-of-type(2) {
   border: 1px solid lightgrey;
   padding: 0.5em 1.5em;

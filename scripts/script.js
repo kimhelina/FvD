@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   const searchPopUp = document.querySelector("section[aria-hidden]");
   const navButtons = searchPopUp.querySelectorAll(
-    "div[role='navigation'] > button:not(:nth-of-type(2))"
+    "section[role='navigation'] > button:not(:nth-of-type(2))"
   );
   const activeButton = searchPopUp.querySelector(
-    "div[role='navigation'] > button:nth-of-type(2)"
+    "section[role='navigation'] > button:nth-of-type(2)"
   );
 
   //얘네 html 에 쓸 수 있는지 지피티한테 물어보기
