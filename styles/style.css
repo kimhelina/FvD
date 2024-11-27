@@ -97,46 +97,50 @@ main {
 /****************/
 /* 		HEADER	 */
 /****************/
+/* grid 로 레이아웃하기 */
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  padding: 1em 2em;
+  padding: 2em 1em;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  list-style-type: none;
 
   position: sticky;
 }
+
+header a {
+  flex: 1;
+  text-align: center;
+}
+
 header img {
   width: 10em;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-}
-
+/*------ HEADER ORDER ------*/
+/* logo */
 header > :nth-child(1) {
   order: 2;
 }
-header > *:nth-child(2) {
+/* hamburger */
+header > :nth-child(2) {
   order: 1;
 }
-header > *:nth-child(4) {
+/* search icon */
+header > :nth-child(4) {
   order: 3;
 }
-header > *:nth-child(5) {
+/* shopping bag */
+header > :nth-child(6) {
   order: 4;
 }
-header > *:nth-child(6) {
-  order: 5;
-}
+
+/*------ HEADER LAYOUT ------*/
 
 /****************/
 /* 		NAVBAR OPEN	 */

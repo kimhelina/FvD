@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "div[role='navigation'] > button:nth-of-type(2)"
   );
 
+  //얘네 html 에 쓸 수 있는지 지피티한테 물어보기
   const options = [
     "COMPLIMENTARY FESTIVE DUO",
     "12 DAY ADVENT CALENDAR",
