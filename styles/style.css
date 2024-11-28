@@ -427,7 +427,8 @@ footer details ul {
   gap: 0.5em;
   font-size: 1em;
 }
-footer details li:hover {
+footer details[open] img {
+  rotate: -90deg;
 }
 
 article {
