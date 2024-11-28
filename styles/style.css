@@ -80,7 +80,6 @@ p {
 button {
   border: none;
   background-color: var(--button-bg);
-  padding: 0.5em 1em;
   cursor: pointer;
 }
 
@@ -352,11 +351,6 @@ section[aria-hidden]
   height: auto;
 }
 
-/* VOOR ALLE BUTTONS */
-button {
-  border: none;
-}
-
 /****************/
 /* 		 FOOTER 	 */
 /****************/
@@ -421,12 +415,19 @@ input[type="radio"] {
 }
 
 /* OTHER  */
-footer section:nth-child(2) ul {
-  gap: 2em;
+footer details {
+  display: flex;
+  border: none;
+  cursor: pointer;
 }
-footer section:nth-child(2) li {
-  justify-content: space-between;
-  gap: 1em;
+footer details ul {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 0.5em;
+  font-size: 1em;
+}
+footer details li:hover {
 }
 
 article {
