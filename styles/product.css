@@ -44,8 +44,13 @@ details ul {
   scrollbar-width: none;
 }
 details ul li {
-  width: 40%;
+  width: 80%;
   flex-shrink: 0;
+}
+details li {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 details ul button {
   display: flex;
@@ -56,14 +61,17 @@ details ul button {
   top: 50%;
   width: 2em;
   cursor: pointer;
-
-  z-index: 2;
 }
 details ul button:nth-child(1) {
   left: 1em;
 }
 details ul button:nth-child(2) {
   right: 0;
+}
+
+details section {
+  display: flex;
+  flex-direction: row;
 }
 
 /* BACK TO COLOGNES */
