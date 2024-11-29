@@ -39,8 +39,9 @@
 /*********************/
 :root {
   /* COLORS */
-  --color-text: #1c1c1c;
-  --color-background: #fcf9ee;
+  color-scheme: light dark;
+  --color-text: light-dark (#1c1c1c, #fff);
+  --color-background: light-dark(#fcf9ee, #010101);
   --white: #fff;
   --primary-color: #212121;
   --button-bg: #f7f4e9;
@@ -390,14 +391,14 @@ footer section:nth-child(1) {
 }
 
 /*----- EMAIL FORM -----*/
-footer form:nth-child(1) {
+footer form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 input[type="email"] {
   border: none;
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 10px solid var(--color-text);
 
   padding: 1em 8em 1em 0.5em;
   align-items: flex-start;
@@ -407,15 +408,12 @@ input[type="email"] {
 }
 
 /*---- GENDER FORM -----*/
-footer form:nth-of-type(2) {
+footer form ul {
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
 }
-footer form:nth-of-type(2) ul {
-  display: flex;
-  flex-direction: column;
-}
-footer form:nth-of-type(2) li {
+footer form li {
   display: flex;
   flex-direction: row;
   text-align: start;
