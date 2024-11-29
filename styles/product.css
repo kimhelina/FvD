@@ -66,6 +66,10 @@ details ul button {
 
   cursor: pointer;
 }
+details[open] img {
+  rotate: -90deg;
+  transition: 0.2s;
+}
 
 /* BACK TO COLOGNES */
 #back-to-colognes {

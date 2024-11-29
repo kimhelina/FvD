@@ -41,9 +41,8 @@
   /* COLORS */
   color-scheme: light dark;
   --color-text: light-dark (#1c1c1c, #fff);
-  --color-background: light-dark(#fcf9ee, #010101);
-  --white: #fff;
-  --primary-color: #212121;
+  --color-background: light-dark(#fcf9ee, #1f1f1f);
+  --white: light-dark(#fff, #1c1c1c);
   --button-bg: #f7f4e9;
   --accent-color: #f4d03f;
   --light-grey: #a7a7a7;
@@ -398,7 +397,7 @@ footer form {
 }
 input[type="email"] {
   border: none;
-  border-bottom: 10px solid var(--color-text);
+  border-bottom: 0.1em solid var(--light-grey);
 
   padding: 1em 8em 1em 0.5em;
   align-items: flex-start;
@@ -411,7 +410,6 @@ input[type="email"] {
 footer form ul {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
 }
 footer form li {
   display: flex;
@@ -423,7 +421,8 @@ footer form li {
 input[type="radio"] {
   cursor: pointer;
   width: 1.8em;
-  accent-color: var(--color-text);
+  /* variable doesn't work */
+  accent-color: #1c1c1c;
 }
 
 /* FOOTER DETAILS NAVIGATIONS  */
@@ -444,6 +443,7 @@ footer details ul {
 }
 footer details[open] img {
   rotate: -90deg;
+  transition: 0.2s;
 }
 footer summary {
   font-weight: 700;
