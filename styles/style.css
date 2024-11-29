@@ -370,10 +370,18 @@ footer p {
   align-items: flex-start;
   font-size: 0.8em;
 }
+footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: space-between;
+}
 footer li {
   display: flex;
   flex-direction: row;
   list-style: none;
+
+  text-decoration: none;
 }
 
 footer section:nth-child(1) {
@@ -387,7 +395,7 @@ footer form:nth-child(1) {
   flex-direction: column;
   align-items: flex-start;
 }
-footer form:nth-child(1) input[type="email"] {
+input[type="email"] {
   border: none;
   border-bottom: 1px solid var(--color-text);
 
@@ -399,14 +407,20 @@ footer form:nth-child(1) input[type="email"] {
 }
 
 /*---- GENDER FORM -----*/
-footer section:nth-child(1) li {
-  text-align: start;
-  padding: 0.2em 0em;
-  gap: 2em;
-}
-footer form:nth-child(2) {
+footer form:nth-of-type(2) {
   display: flex;
   flex-direction: column;
+}
+footer form:nth-of-type(2) ul {
+  display: flex;
+  flex-direction: column;
+}
+footer form:nth-of-type(2) li {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+
+  gap: 2em;
 }
 input[type="radio"] {
   cursor: pointer;
@@ -414,7 +428,10 @@ input[type="radio"] {
   accent-color: var(--color-text);
 }
 
-/* OTHER  */
+/* FOOTER DETAILS NAVIGATIONS  */
+footer section {
+  width: 100%;
+}
 footer details {
   display: flex;
   border: none;
@@ -430,7 +447,15 @@ footer details ul {
 footer details[open] img {
   rotate: -90deg;
 }
+footer summary {
+  font-weight: 700;
+}
 
-article {
-  width: 100%;
+footer section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em 0em;
+
+  text-decoration: underline;
 }

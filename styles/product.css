@@ -42,7 +42,7 @@ details ul {
   overflow-x: auto;
   scroll-behavior: smooth;
   position: relative;
-  padding: 0;
+  padding-top: 2em;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
