@@ -8,9 +8,26 @@ button {
   background-color: var(--button-enabled-background);
   color: var(--color-text);
   cursor: pointer;
+  font-family: "LarsMalone";
 }
 button:focus {
   outline: var(--color-text);
+}
+
+/* BACK TO COLOGNES */
+main section:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  padding: 2em 0 2em 0;
+}
+main section:nth-of-type(1) {
+  height: 1em;
+}
+
+/* REVIEWS */
+main section:nth-of-type(2) {
+  display: flex;
+  gap: 0.2em;
 }
 
 /* DESCRIPTIONS */
@@ -69,14 +86,4 @@ details ul button {
 details[open] img {
   rotate: -90deg;
   transition: 0.2s;
-}
-
-/* BACK TO COLOGNES */
-#back-to-colognes {
-  display: flex;
-  align-items: center;
-  padding: 2em 0 2em 0;
-}
-#back-to-colognes img {
-  height: 1em;
 }
