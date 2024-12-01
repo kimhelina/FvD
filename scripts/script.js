@@ -92,3 +92,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const previousBtn = document.querySelector("details ul button");
+
+

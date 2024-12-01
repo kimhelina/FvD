@@ -1,21 +1,311 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Helina Kim" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Jomalone Main Homepage</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Helina Kim" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="styles/style.css" rel="stylesheet" />
-    <link href="styles/home.css" rel="stylesheet" />
+  <title>Jomalone Main Homepage</title>
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-  </head>
+  <link href="styles/style.css" rel="stylesheet" />
+  <link href="styles/home.css" rel="stylesheet" />
 
-  <body>
-    <h1>Howdy FED2425</h1>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+</head>
 
-    <script defer src="scripts/script.js"></script>
-  </body>
+<body>
+  <!------ HEADER ------>
+  <header>
+    <!-- LOGO -->
+    <a href="index.html"><img src="images/JoMaloneLogo.png" alt="logo of jo malone" /></a>
+
+    <!-- HAMBURGER ICON -->
+    <button aria-label="Open Menu">
+      <img src="images/icons/hamburger.svg" class="icon" alt="hamburger menu icon" />
+    </button>
+
+    <!-- HAMBURGER MENU OPEN -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            christmas<img class="icon" src="images/icons/arrow-right.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="#">men<img class="icon" src="images/icons/arrow-right.svg" /></a>
+        </li>
+        <li>
+          <a href="product.html">cologne<img class="icon" src="images/icons/arrow-right.svg" /></a>
+        </li>
+        <li>
+          <a href="#">home<img class="icon" src="images/icons/arrow-right.svg" /></a>
+        </li>
+        <li>
+          <a href="#">bath & body<img class="icon" src="images/icons/arrow-right.svg" /></a>
+        </li>
+        <li>
+          <a href="#">services<img class="icon" src="images/icons/arrow-right.svg" /></a>
+        </li>
+        <li>
+          <a href="#">brand<img class="icon" src="images/icons/arrow-right.svg" /></a>
+        </li>
+        <li><a href="#">christmas</a></li>
+        <li><a href="#">account</a></li>
+        <li><a href="#">wishlist</a></li>
+        <li><a href="#">bag</a></li>
+      </ul>
+    </nav>
+
+    <!-- SEARCHBAR -->
+    <button aria-label="Search">
+      <img src="images/icons/search.svg" class="icon" alt="search icon" />
+    </button>
+    <!-- Search Pop-Up -->
+    <section aria-hidden="true">
+      <section></section> <!-- Overlay -->
+      <section>
+        <button aria-label="Close Search">&times;</button>
+        <form>
+          <input type="text" placeholder="Start typing" />
+          <button>
+            <!----여기 버튼 아이콘 만들어야함 마이크 아이콘---->
+            <img src="images/icons/search.svg" alt="Search Icon" />
+          </button>
+        </form>
+        <p>NEED A LITTLE INSPIRATION?</p>
+        <section role="navigation" aria-label="Inspiration Navigation">
+          <button aria-label="Previous Option">&lt;</button>
+          <button> COMPLIMENTARY FESTIVE DUO </button>
+          <button aria-label="Next Option">&gt;</button>
+        </section>
+      </section>
+    </section>
+
+    <!-- SHOPPINGBAG -->
+    <button aria-label="Shopping bag">
+      <img src="images/icons/shopping-bag.png" class="icon" alt="shopping bag icon" />
+    </button>
+  </header>
+
+  <!-------- MAIN -------->
+  <main>
+    <hgroup role="group" aria-roledescription="Heading group">
+      <h1>Home page of Jo Malone</h1>
+    </hgroup>
+    <p>Black Friday: Five Treats in a Pouch For You</p>
+    <a href="#">Shop Now</a>
+    <img src="images/indexPage/firstbanner.jpg" alt="pouch with small products of Jo Malone">
+
+    <!-- text carousel -->
+    <section>
+      <section>
+        <h2>Gift wrapping</h2>
+        <p>Complimentary Jo Malone London box</p>
+      </section>
+      <section>
+        <h2>Complimentary delivery</h2>
+        <p>On all orders/p>
+      </section>
+      <section>
+        <h2>Out online services</h2>
+        <p>Engraving and Live Chat</p>
+      </section>
+    </section>
+
+    <!-- product 1 -->
+    <section>
+      <h2>A Festive favourite</h2>
+      <p>Shop orange bitters</p>
+      <img src="images/indexPage/product1.png" alt="orange bitters cologne 100ml">
+    </section>
+
+    <!-- BESTSELLTERS CARDS-->
+    <h2>Discover our Bestsellers</h2>
+    <section>
+      <ul>
+        <li>
+          <h3>Colognes</h3>
+          <img src="images/indexPage/colognes.jpg">
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <h3>Home</h3>
+          <img src="images/indexPage/home.jpg">
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <h3>Bath & Body</h3>
+          <img src="images/indexPage/bath&body.jpg">
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <h3>Little luxuries</h3>
+          <img src="images/indexPage/littleLuxury.jpg">
+          <a href="#">Shop</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- INSPIRATION -->
+    <section>
+      <h2>Need Inspiration?</h2>
+      <img src="images/indexPage/needInspiration.jpg">
+      <a href="#">Explore our christmas collection</a>
+    </section>
+
+    <!-- 비디오 해결해야함 -->
+    <video muted preload="none" data-autoplay="1" src="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_MB_LE.mp4"
+      autoplay="true">
+      <source src="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_MB_LE.mp4" class="preprocess-media"
+        data-asset-url--default="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_DT_LE.mp4"
+        data-asset-url--desktop="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_DT_LE.mp4"
+        data-asset-url--mobile="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_MB_LE.mp4" type="video/mp4">
+    </video>
+
+    <!-- PERSONALIZED PRESENT -->
+    <section>
+      <h2>A Personalized Present</h2>
+      <a href="#">Engrave your gift</a>
+      <img src="images/indexPage/personalizedPresent.jpg">
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <!-- SIGNUP FORM -->
+    <section>
+      <form>
+        <label>Sign Up</label>
+        <input type="email" value="Email Adress" />
+
+
+        <!-- GENDER RADIO -->
+        <ul>
+          <p>Please select your gender</p>
+
+          <li>
+            <input type="radio" value="Female" name="gender" />
+            <label>Female</label>
+          </li>
+          <li>
+            <input type="radio" value="Male" name="gender" />
+            <label>Male</label>
+          </li>
+          <li>
+            <input type="radio" value="Other" name="gender" />
+            <label>Other</label>
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <!-- DETAILS OF OTHER NAVIGATIONS -->
+    <section>
+      <details>
+        <summary>
+          <span>Help & Contact us</span>
+          <img class="icon" src="images/icons/arrow-down.svg" />
+        </summary>
+        <ul>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">My Profile</a>
+          </li>
+          <li>
+            <a href="#">My Order</a>
+          </li>
+          <li>
+            <a href="#">Deliver Information</a>
+          </li>
+          <li>
+            <a href="#">Return & Refunds</a>
+          </li>
+          <li>
+            <a href="#">Shopping Online</a>
+          </li>
+          <li>
+            <a href="#">Manage Cookies</a>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <span>Visit & Explore</span>
+          <img class="icon" src="images/icons/arrow-down.svg" />
+        </summary>
+        <ul>
+          <li>
+            <a href="#">Store Locator</a>
+          </li>
+          <li>
+            <a href="#">Stories</a>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <span>Our Company</span>
+          <img class="icon" src="images/icons/arrow-down.svg" />
+        </summary>
+        <ul>
+          <li>
+            <a href="#">Corporate Info</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <span>Social</span>
+          <img class="icon" src="images/icons/arrow-down.svg" />
+        </summary>
+        <ul>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/JoMaloneLondon/">Facebook</a>
+          </li>
+          <li>
+            <a href="https://nl.pinterest.com/jomalonelondon/">Pinterest</a>
+          </li>
+          <li>
+            <a href="https://x.com/JoMaloneLondon/">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/JoMaloneLondon2012">Youtube</a>
+          </li>
+        </ul>
+      </details>
+    </section>
+
+
+    <section>
+      <a href="#">Change Country</a>
+
+      <ul>
+        <li><a href="#">Terms of Sale</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of use</a></li>
+      </ul>
+    </section>
+
+
+    <!-- COPYRIGHT & LINKS -->
+    <p>&copy; 2024 Jo Malone. All Rights Reserved.</p>
+  </footer>
+  <script defer src="scripts/script.js"></script>
+</body>
+
 </html>

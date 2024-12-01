@@ -1,0 +1,42 @@
+main h2 {
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.1em;
+}
+main h3 {
+  font-weight: 100;
+}
+img {
+  width: 100%;
+}
+
+/* LINK TEXT */
+main a {
+  text-transform: uppercase;
+}
+
+/* LIST OF BANNERS */
+main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+main li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style: none;
+  gap: 0.5em;
+}
+main li img {
+  order: 1;
+}
+main li h3 {
+  order: 2;
+}
+main li a {
+  order: 3;
+  text-decoration: underline;
+}
