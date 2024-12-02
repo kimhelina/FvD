@@ -92,33 +92,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const previousBtn = document.querySelector("details ul button");
-
-document.addEventListener("DOMContentLoaded", function () {
-  const carouselContainer = document.querySelector(
-    "main section:nth-of-type(3) > div"
-  );
-  const images = carouselContainer.querySelectorAll("img");
-  const prevButton = document.querySelector(
-    'button[aria-label="previous image button"]'
-  );
-  const nextButton = document.querySelector(
-    'button[aria-label="next image button"]'
-  );
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    const offset = -currentIndex * 100;
-    carouselContainer.style.transform = `translateX(${offset}%)`;
-  }
-
-  prevButton.addEventListener("click", function () {
-    currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1; // Loop back to the last image
-    updateCarousel();
-  });
-
-  nextButton.addEventListener("click", function () {
-    currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1; // Loop back to the first image
-    updateCarousel();
-  });
-});
