@@ -22,10 +22,6 @@
   src: url("../fonts/MaloneSerif-Bold.woff2");
   font-weight: 400;
   letter-spacing: 0.1em;
-
-  /* font-size: 24px; */
-  /* line-height: 1.3; */
-  /* text-transform: capitalize; */
 }
 
 /**************/
@@ -90,7 +86,7 @@ p {
 
 button {
   border: none;
-  background-color: var(--button-bg);
+  /* background-color: var(--button-bg); */
   cursor: pointer;
 }
 
@@ -229,7 +225,7 @@ section[aria-hidden] > section:nth-of-type(1) {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 10;
 }
 
 /* Pop-Up Container */
@@ -239,7 +235,7 @@ section[aria-hidden] > section:nth-of-type(2) {
   height: 90%;
   background-color: var(--color-background);
   padding: 1em;
-  z-index: 2;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -456,10 +452,18 @@ footer details ul {
   gap: 0.5em;
   font-size: 1em;
 }
-footer details[open] img {
-  rotate: -90deg;
-  transition: 0.2s;
+
+/* OPEN ARROW */
+details[open] summary img.icon {
+  transform: rotate(0deg);
 }
+
+/* CLOSED ARROW */
+details summary img.icon {
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+}
+
 footer summary {
   font-weight: 700;
 }

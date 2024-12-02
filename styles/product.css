@@ -34,6 +34,31 @@ main section:nth-of-type(2) {
 main section:nth-of-type(3) {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main section:nth-of-type(3) > div {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding-bottom: 1em;
+}
+
+main section:nth-of-type(3) > div > img {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+button img {
+  width: 2em;
+  height: auto;
+}
+
+main section:nth-of-type(3) > div > button {
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 /* PERFUMESIZE BUTTONS */
@@ -68,7 +93,9 @@ details {
 details img {
   width: 10em;
 }
-
+details[open] {
+  height: auto;
+}
 summary {
   display: flex;
   flex-direction: row;
@@ -83,19 +110,17 @@ details section {
 details ul {
   display: flex;
   list-style: none;
-  gap: 3em;
+  gap: 3.5em;
+  padding: 1em 0;
   overflow-x: auto;
   scroll-behavior: smooth;
-  position: relative;
-  padding-top: 2em;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 details ul li {
   width: 80%;
-  height: auto;
-  flex-shrink: 0;
+  flex: 1 1 auto;
 }
 details li {
   display: flex;
@@ -110,9 +135,20 @@ details ul button {
 
   cursor: pointer;
 }
-details[open] img {
-  rotate: -90deg;
-  transition: 0.2s;
+
+details[open] > summary + section {
+  position: relative;
+  height: auto;
+  overflow-y: auto;
 }
-details:last-of-type[open] {
+
+/* OPEN ARROW */
+details[open] summary img.icon {
+  transform: rotate(0deg);
+}
+
+/* CLOSED ARROW */
+details summary img.icon {
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
 }
