@@ -102,6 +102,7 @@ main section:nth-of-type(4) ul {
   display: flex;
   flex-direction: column;
   gap: 1.2em;
+  padding: 2em 0em;
   justify-content: center;
   align-items: center;
 }
