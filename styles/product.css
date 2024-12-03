@@ -97,6 +97,41 @@ main > button {
   font-size: 1.2em;
 }
 
+/* DESCRIPTIONS WITH ICON */
+main section:nth-of-type(4) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  justify-content: center;
+  align-items: center;
+}
+main section:nth-of-type(4) li {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  list-style: none;
+}
+main section:nth-of-type(4) li a {
+  font-family: inherit;
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+/* SHARE & WISHLIST BUTTONS */
+main section:nth-of-type(4) section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section:nth-of-type(4) section button:nth-of-type(1) {
+  text-decoration: underline;
+}
+main section:nth-of-type(4) section button:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+}
+
 /* DESCRIPTIONS */
 details {
   padding: 2.2em 1em;
