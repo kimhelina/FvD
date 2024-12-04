@@ -60,6 +60,7 @@
 /****************/
 
 body {
+  padding-top: 5em; 
   background-color: var(--color-background);
   font-family: "LarsMalone";
   color: var(--color-text);
@@ -115,7 +116,13 @@ header {
   width: 100%;
   list-style-type: none;
 
-  position: sticky;
+  position: fixed; /* Change from sticky to fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--color-background);
+  
+  transition: transform 0.3s ease-in-out;
 }
 
 header a {

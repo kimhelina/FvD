@@ -1,41 +1,33 @@
 //------------ HEADER HIDE & SHOW SCROLLING------------//
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $("header").outerHeight();
+let lastScrollPosition = 0;
 
-$(window).scroll(function (event) {
-  didScroll = true;
-});
-
-setInterval(function () {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 250);
-
-function hasScrolled() {
-  var st = $(this).scrollTop();
-
-  // Make sure they scroll more than delta
-  if (Math.abs(lastScrollTop - st) <= delta) return;
-
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight) {
-    // Scroll Down
-    $("header").removeClass("nav-down").addClass("nav-up");
+function handleScroll() {
+  const currentScrollPosition = window.scrollY;
+  const header = document.querySelector('header');
+  
+  // Determine scroll direction
+  if (currentScrollPosition > lastScrollPosition) {
+    // Scrolling down
+    header.style.transform = 'translateY(-100%)';
   } else {
-    // Scroll Up
-    if (st + $(window).height() < $(document).height()) {
-      $("header").removeClass("nav-up").addClass("nav-down");
-    }
+    // Scrolling up
+    header.style.transform = 'translateY(0)';
   }
-
-  lastScrollTop = st;
+  
+  lastScrollPosition = currentScrollPosition;
 }
+
+// Add scroll event listener with throttling for better performance
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      handleScroll();
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
 
 // ---------- HAMBURGER ----------------//
 document.addEventListener("DOMContentLoaded", () => {
