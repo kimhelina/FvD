@@ -67,6 +67,7 @@ main section:nth-of-type(3) ul {
   flex-direction: row;
   justify-content: center;
   gap: 2em;
+  padding: 2em 0;
 }
 main section:nth-of-type(3) li {
   list-style: none;
@@ -80,6 +81,15 @@ main section:nth-of-type(3) li:nth-of-type(2) {
   font-weight: 300;
   padding: 1em auto;
   border: 0.05em solid var(--color-text);
+}
+/* DARKMODE FOR PERFUMESIZE BUTTONS */
+@media (prefers-color-scheme: dark){
+  main section:nth-of-type(3) li {
+    opacity: 0.5;
+  }
+  main section:nth-of-type(3) li button {
+    color: var(--color-text);
+  }
 }
 
 /* ADD TO BAG BUTTON */
@@ -106,24 +116,79 @@ main > button:nth-of-type(2) {
 /* ADD ENGRAVING DIALOG */
 dialog {
   position: fixed;
+  top: 30%;
+  left: 3%;
   justify-content: center;
+  padding: 1.2em;
+  width: 100%;
   z-index: 2;
 }
 dialog::backdrop {
   background-color: var(--color-text);
   opacity: 0.5;
 }
+
+/* Target the close button */
+dialog button[aria-label="close engraving"] {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Style dialog content */
+dialog input {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  padding: 0.8em;
+}
+/* button stlying */
+dialog button:nth-last-of-type(2){
+  font-family: inherit;
+  text-decoration: underline;
+}
+dialog button:last-of-type {
+  background-color: var(--color-text);
+  color: var(--white);
+}
+dialog button:last-of-type,
+dialog button:nth-last-of-type(2) {
+  display: flex;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+}
+dialog p:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+dialog section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+/* dialog open animation */
+dialog[open] {
+  animation: fadein 0.2s ease-in forwards;
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+/* Prevent scrolling when dialog is open */
 html:has(dialog[open]) {
   overflow: hidden;
-  scrollbar-gutter: stable;
-}
-dialog button:nth-of-type(1) {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2em;
-  aspect-ratio: 1;
-  cursor: pointer;
 }
 
 /* DESCRIPTIONS WITH ICON */

@@ -1,41 +1,7 @@
-const carousel = document.querySelector('[aria-label="Product Card Carousel"]');
-const track = carousel.querySelector('section[aria-live="polite"]');
-const slides = Array.from(track.querySelectorAll("figure"));
-const nextButton = carousel.querySelector('button[aria-label="Next slide"]');
-const prevButton = carousel.querySelector(
-  'button[aria-label="Previous slide"]'
-);
-let currentIndex = 0;
-
-function updateCarousel() {
-  track.style.transform = `translateX(-${currentIndex * 100}%)`;
-  // Update aria-live region for accessibility
-  slides.forEach((slide, index) => {
-    if (index === currentIndex) {
-      slide.setAttribute("aria-hidden", "false");
-    } else {
-      slide.setAttribute("aria-hidden", "true");
-    }
-  });
-}
-
-nextButton.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateCarousel();
-});
-
-prevButton.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateCarousel();
-});
-
-// Initialize
-updateCarousel();
-
 // --------PRODUCT IMG CAROUSEL
 document.addEventListener("DOMContentLoaded", function () {
   const carouselContainer = document.querySelector(
-    "main section:nth-of-type(3) > div"
+    "main > section:nth-of-type(3) > section:nth-of-type(1)"
   );
   const images = carouselContainer.querySelectorAll("img");
   const prevButton = document.querySelector(
@@ -50,22 +16,54 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateCarousel() {
     const offset = -currentIndex * 100;
     carouselContainer.style.transform = `translateX(${offset}%)`;
+
+    // Add accessibility attributes
+    images.forEach((image, index) => {
+      image.setAttribute('aria-hidden', index === currentIndex ? 'false' : 'true');
+    });
   }
 
   prevButton.addEventListener("click", function () {
-    currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1; // Loop back to the last image
+    currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
     updateCarousel();
   });
 
   nextButton.addEventListener("click", function () {
-    currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1; // Loop back to the first image
+    currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
     updateCarousel();
   });
+
+  // Initialize carousel
+  updateCarousel();
 });
 
 //----------- DIALOG
-const engraveButton = document.querySelector("main > button:nth-of-type(2)");
-const engraveDialog = document.querySelector("dialog");
-engraveButton.addEventListener("click", () => {
-  engraveDialog.showModal();
+document.addEventListener("DOMContentLoaded", function() {
+  const engraveButton = document.querySelector("main > button:nth-of-type(2)");
+  const engraveDialog = document.querySelector("dialog");
+  const closeDialogButton = engraveDialog.querySelector("button:nth-of-type(1)");
+
+  engraveButton.addEventListener("click", () => {
+    engraveDialog.showModal();
+  });
+
+  closeDialogButton.addEventListener("click", () => {
+    engraveDialog.close();
+  });
+});
+
+// Get dialog element
+const dialog = document.querySelector('dialog');
+
+// Close dialog when clicking outside
+dialog.addEventListener('click', (e) => {
+    const dialogDimensions = dialog.getBoundingClientRect();
+    if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+    ) {
+        dialog.close();
+    }
 });
