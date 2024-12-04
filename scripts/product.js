@@ -32,7 +32,7 @@ prevButton.addEventListener("click", () => {
 // Initialize
 updateCarousel();
 
-// PRODUCT IMG CAROUSEL
+// --------PRODUCT IMG CAROUSEL
 document.addEventListener("DOMContentLoaded", function () {
   const carouselContainer = document.querySelector(
     "main section:nth-of-type(3) > div"
@@ -61,4 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1; // Loop back to the first image
     updateCarousel();
   });
+});
+
+//----------- DIALOG
+const engraveButton = document.querySelector("main > button:nth-of-type(2)");
+const engraveDialog = document.querySelector("dialog");
+engraveButton.addEventListener("click", () => {
+  engraveDialog.showModal();
 });

@@ -72,29 +72,58 @@ main section:nth-of-type(3) li {
   list-style: none;
   font-family: inherit;
   font-size: 1.5em;
-  border: 0.1em solid red;
+  background-color: var(--button-bg);
   padding: 0.1em 1em;
 }
-main section:nth-of-type(3) button:last-of-type {
-  background-color: var(--color-text);
+main section:nth-of-type(3) li:nth-of-type(2) {
   font-family: inherit;
   font-weight: 300;
   padding: 1em auto;
+  border: 0.05em solid var(--color-text);
 }
 
 /* ADD TO BAG BUTTON */
-main > button {
+main > button:nth-of-type(1) {
   width: 100%;
   padding: 0.5em;
 
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: var(--color-text);
+  color: var(--white);
 
-  border: #1c1c1c solid 0.1em;
+  border: var(--color-text) solid 0.1em;
 
   font-family: inherit;
   font-weight: 500;
   font-size: 1.2em;
+}
+
+main > button:nth-of-type(2) {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+/* ADD ENGRAVING DIALOG */
+dialog {
+  position: fixed;
+  justify-content: center;
+  z-index: 2;
+}
+dialog::backdrop {
+  background-color: var(--color-text);
+  opacity: 0.5;
+}
+html:has(dialog[open]) {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+dialog button:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2em;
+  aspect-ratio: 1;
+  cursor: pointer;
 }
 
 /* DESCRIPTIONS WITH ICON */
@@ -102,7 +131,6 @@ main section:nth-of-type(4) ul {
   display: flex;
   flex-direction: column;
   gap: 1.2em;
-  padding: 2em 0em;
   justify-content: center;
   align-items: center;
 }
@@ -116,6 +144,18 @@ main section:nth-of-type(4) li a {
   font-family: inherit;
   font-size: 0.8em;
   text-decoration: underline;
+}
+main section:nth-of-type(4) li:nth-of-type(3) {
+  display: grid;
+}
+main section:nth-of-type(4) li:nth-of-type(3) img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+main section:nth-of-type(4) li:nth-of-type(3) p {
+  grid-area: 1 / 2 / 2 / 3;
+}
+main section:nth-of-type(4) li:nth-of-type(3) a {
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 /* SHARE & WISHLIST BUTTONS */
@@ -131,6 +171,10 @@ main section:nth-of-type(4) section button:nth-of-type(2) {
   display: flex;
   justify-content: center;
   gap: 0.8em;
+}
+
+/*------ PRODUCT DESCRIPTION LARGER SCREEN ------*/
+@media screen and (min-width: 65em) {
 }
 
 /* DESCRIPTIONS */

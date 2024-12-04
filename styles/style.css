@@ -41,7 +41,7 @@
 :root {
   /* COLORS */
   color-scheme: light dark;
-  --color-text: light-dark (#1c1c1c, #fff);
+  --color-text: light-dark(#1c1c1c, #fff);
   --color-background: light-dark(#fcf9ee, #1f1f1f);
   --white: light-dark(#fff, #1c1c1c);
   --button-bg: #f7f4e9;
@@ -86,7 +86,6 @@ p {
 
 button {
   border: none;
-  /* background-color: var(--button-bg); */
   cursor: pointer;
 }
 
@@ -148,6 +147,40 @@ header > :nth-child(6) {
 header > :nth-child(4),
 header > :nth-child(6) {
   padding: 1em;
+}
+/* profile & wishlist */
+header :nth-child(7),
+header :nth-child(8) {
+  visibility: hidden;
+}
+
+/* HEADER FOR LARGER SCREEN */
+@media screen and (min-width: 65em) {
+  /* logo */
+  header > :nth-child(1) {
+    order: 2;
+  }
+  /* hamburger */
+  header > :nth-child(2) {
+    visibility: hidden;
+  }
+  /* search icon */
+  header > :nth-child(4) {
+    order: 1;
+  }
+  /* shopping bag */
+  header > :nth-child(6) {
+    order: 5;
+  }
+  /* profile */
+  header :nth-child(7) {
+    visibility: visible;
+    order: 3;
+  }
+  header :nth-child(8) {
+    visibility: visible;
+    order: 4;
+  }
 }
 
 /****************/
@@ -356,6 +389,15 @@ section[aria-hidden]
   cursor: pointer;
 }
 
+/* NAVBAR FOR LARGER SCREEN */
+@media screen and (min-width: 65em) {
+  nav ul {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 /* VOOR ALLE ICONEN */
 .icon {
   width: 1.3em;
@@ -370,9 +412,9 @@ footer {
   flex-direction: column;
   align-items: flex-start;
 
-  width: 100%; /* 가로 전체 차지 */
+  width: 100%;
 
-  padding: 3em 1em; /* 여백 추가 */
+  padding: 3em 1em;
 
   background-color: var(--white);
 }
@@ -418,6 +460,8 @@ input[type="email"] {
 }
 
 /*---- GENDER FORM -----*/
+
+/* MARGIN LEFT AUTO */
 footer form ul {
   display: flex;
   flex-direction: column;
@@ -432,8 +476,7 @@ footer form li {
 input[type="radio"] {
   cursor: pointer;
   width: 1.8em;
-  /* variable doesn't work */
-  accent-color: #1c1c1c;
+  accent-color: var(--color-text);
 }
 
 /* FOOTER DETAILS NAVIGATIONS  */
@@ -441,9 +484,9 @@ footer section {
   width: 100%;
 }
 footer details {
-  /* display: flex; */
   border: none;
   cursor: pointer;
+  padding: 2.2em 1em;
 }
 footer details ul {
   display: flex;
@@ -451,6 +494,12 @@ footer details ul {
   text-align: start;
   gap: 0.5em;
   font-size: 1em;
+}
+footer summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
 }
 
 /* OPEN ARROW */
@@ -464,10 +513,6 @@ details summary img.icon {
   transform: rotate(-90deg);
 }
 
-footer summary {
-  font-weight: 700;
-}
-
 footer section:nth-of-type(3) {
   display: flex;
   flex-direction: column;
@@ -475,4 +520,28 @@ footer section:nth-of-type(3) {
   padding: 2em 0em;
 
   text-decoration: underline;
+}
+
+/* FOOTER FOR LARGER SCREEN */
+@media screen and (min-width: 65em) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  /* SIGNUP FORM */
+  footer section:nth-child(1) {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: auto;
+  }
+  /* FOOTER NAV */
+  footer section:nth-of-type(2) {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  footer section:nth-of-type(3) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
 }

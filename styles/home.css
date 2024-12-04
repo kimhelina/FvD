@@ -90,17 +90,60 @@ main section:nth-of-type(2) > ul > li {
 
 /* Apply animation to each <li> */
 main section:nth-of-type(2) > ul > li:nth-child(1) {
-  animation: slide-horizontal 9s infinite;
+  animation: slide-horizontal 7s infinite;
 }
 
 main section:nth-of-type(2) > ul > li:nth-child(2) {
-  animation: slide-horizontal 9s infinite;
+  animation: slide-horizontal 7s infinite;
   animation-delay: 3s;
 }
 
 main section:nth-of-type(2) > ul > li:nth-child(3) {
-  animation: slide-horizontal 9s infinite;
+  animation: slide-horizontal 7s infinite;
   animation-delay: 6s;
+}
+
+/* BREADCRUMBS */
+main section:nth-of-type(2) > ol {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+  gap: 0.5em;
+}
+
+main section:nth-of-type(2) > ol > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd; /* Inactive color */
+  transition: background-color 0.3s ease;
+}
+
+/* Active breadcrumb sync */
+main section:nth-of-type(2) > ol > li:nth-child(1) {
+  animation: breadcrumb-active 9s infinite;
+}
+main section:nth-of-type(2) > ol > li:nth-child(2) {
+  animation: breadcrumb-active 9s infinite;
+  animation-delay: 3s;
+}
+main section:nth-of-type(2) > ol > li:nth-child(3) {
+  animation: breadcrumb-active 9s infinite;
+  animation-delay: 6s;
+}
+
+/* Breadcrumb animation */
+@keyframes breadcrumb-active {
+  0%,
+  10% {
+    background-color: #000; /* Active color */
+  }
+  11%,
+  100% {
+    background-color: #ddd; /* Inactive color */
+  }
 }
 
 /*------ LIST OF BANNERS ------*/
@@ -128,11 +171,6 @@ main li h3 {
 main li a {
   order: 3;
 }
-/* main li h3,
-main li a {
-  padding-left: 1em;
-  text-align: left;
-} */
 
 /* INSPIRATION */
 
