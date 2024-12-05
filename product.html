@@ -63,7 +63,7 @@
     </nav>
 
     <!-- SEARCHBAR -->
-    <button aria-label="Search">
+    <button aria-label="Search button">
       <img src="images/icons/search.svg" class="icon" alt="search icon" />
     </button>
     <!-- Search Pop-Up -->
@@ -113,8 +113,8 @@
     <!-- PRODUCT DETAILS -->
     <!-- page back nav -->
     <section>
-      <img src="images/icons/arrow-left.svg" class="icon" />
-      <p>Colognes</p>
+      <h2>Colognes</h2>
+      <img src="images/icons/arrow-left.svg" class="icon" alt="back to colognes icon" />
     </section>
 
     <!-- REVIEWS -->
@@ -124,7 +124,7 @@
       <img src="images/icons/star_filled.svg" class="icon" />
       <img src="images/icons/star_filled.svg" class="icon" />
       <img src="images/icons/star_filled.svg" class="icon" />
-      <p>2762 Reviews</p>
+      <h2>2762 Reviews</h2>
     </section>
 
 
@@ -181,29 +181,28 @@
       <h2>Engrave Bottle</h2>
       <button aria-label="close engraving">X</button>
 
+      <!-- engraving input -->
       <input placeholder="First Line" type="text" maxlength="20">
       <input placeholder="Second Line (optional)" type="text" maxlength="10">
 
-      <section>
-        <p>English Pear & Freesia - 100ml</p>
-        <p>€146.00</p>
-      </section>
-
-      <section>
-        <p>Engraving</p>
-        <p>€1.00</p>
-      </section>
-
-      <section>
-        <p>Sub Total</p>
-        <p>€147.00</p>
-      </section>
-
-      <section>
-        <button>Cancel</button>
-        <button>Add to Bag</button>
-      </section>
-
+      <ul>
+        <li>
+          <p>English Pear & Freesia - 100ml</p>
+          <p>€146.00</p>
+        </li>
+        <li>
+          <p>Engraving</p>
+          <p>€1.00</p>
+        </li>
+        <li>
+          <p>Sub Total</p>
+          <p>€147.00</p>
+        </li>
+        <li>
+          <button>Cancel</button>
+          <button>Add to Bag</button>
+        </li>
+      </ul>
 
       <p>Engraved items are only available with standard delivery</p>
     </dialog>
@@ -326,7 +325,7 @@
     <section>
       <form>
         <label>Sign Up</label>
-        <input type="email" value="Email Adress" />
+        <input type="email" value="Email Adress" aria-label="Email input to sign up" />
 
 
         <!-- GENDER RADIO -->
@@ -334,15 +333,15 @@
           <p>Please select your gender</p>
 
           <li>
-            <input type="radio" value="Female" name="gender" />
+            <input type="radio" value="Female" name="gender" aria-label="Female readio button" />
             <label>Female</label>
           </li>
           <li>
-            <input type="radio" value="Male" name="gender" />
+            <input type="radio" value="Male" name="gender" aria-label="Male radio button" />
             <label>Male</label>
           </li>
           <li>
-            <input type="radio" value="Other" name="gender" />
+            <input type="radio" value="Other" name="gender" aria-label="Other radio button" />
             <label>Other</label>
           </li>
         </ul>

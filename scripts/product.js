@@ -67,3 +67,10 @@ dialog.addEventListener('click', (e) => {
         dialog.close();
     }
 });
+
+// Add keyboard support for closing dialog esc key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && dialog.open) {
+        dialog.close();
+    }
+});

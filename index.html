@@ -64,7 +64,7 @@
     </button>
     <!-- Search Pop-Up -->
     <section aria-hidden="true">
-      <section></section> <!-- Overlay -->
+      <section></section>
       <section>
         <button aria-label="Close Search">&times;</button>
         <form>
@@ -106,24 +106,24 @@
     <!-- text carousel ; section 2-->
     <section>
       <ul>
-        <li>
+        <li id="text1">
           <h2>Gift wrapping</h2>
           <p>Complimentary Jo Malone London box</p>
         </li>
-        <li>
+        <li id="text2">
           <h2>Complimentary delivery</h2>
           <p>On all orders</p>
         </li>
-        <li>
+        <li id="text3">
           <h2>Out online services</h2>
           <p>Engraving and Live Chat</p>
         </li>
       </ul>
-      <!-- Breadcrumbs -->
+
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li><a href="text1">1</a></li>
+        <li><a href="text1">2</a></li>
+        <li><a href="text1">3</a></li>
       </ul>
     </section>
 
@@ -141,40 +141,36 @@
         <li>
           <h3>Colognes</h3>
           <img src="images/indexPage/colognes.jpg">
-          <a href="#">Shop</a>
+          <a href="#" aria-label="Shop colognes">Shop</a>
         </li>
         <li>
           <h3>Home</h3>
           <img src="images/indexPage/home.jpg">
-          <a href="#">Shop</a>
+          <a href="#" aria-label="Shop home products">Shop</a>
         </li>
         <li>
           <h3>Bath & Body</h3>
           <img src="images/indexPage/bath&body.jpg">
-          <a href="#">Shop</a>
+          <a href="#" aria-label="Shop bath & body products">Shop</a>
         </li>
         <li>
           <h3>Little luxuries</h3>
           <img src="images/indexPage/littleLuxury.jpg">
-          <a href="#">Shop</a>
+          <a href="#" aria-label="Shop little luxuries">Shop</a>
         </li>
       </ul>
     </section>
 
     <!-- INSPIRATION -->
     <section>
-      <a href="#">Explore our christmas collection</a>
+      <a href="#" aria-label="Explore our christmas collection">Explore our christmas collection</a>
       <h2>Need Inspiration?</h2>
       <img src="images/indexPage/needInspiration.jpg">
     </section>
 
-    <!-- 비디오 해결해야함 -->
-    <video muted preload="none" data-autoplay="1" src="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_MB_LE.mp4"
-      autoplay="true">
-      <source src="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_MB_LE.mp4" class="preprocess-media"
-        data-asset-url--default="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_DT_LE.mp4"
-        data-asset-url--desktop="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_DT_LE.mp4"
-        data-asset-url--mobile="/media/export/cms/BF_Nov'24/25A02_Christmas_HP-MD-4_5_MB_LE.mp4" type="video/mp4">
+    <!-- video source: https://www.youtube.com/watch?v=WSKa7DrZlPo -->
+    <video autoplay loop muted>
+      <source src="video/joMalonevideo1.mp4" type="video/mp4">
     </video>
 
     <!-- PERSONALIZED PRESENT -->
