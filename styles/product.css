@@ -265,6 +265,14 @@ main section:nth-of-type(4) section button:nth-of-type(2) {
   justify-content: center;
   gap: 0.8em;
 }
+/* wishlist button */
+button[data-wishlist] img {
+  transition: transform 0.3s ease;
+}
+
+button[data-wishlist="true"] img {
+  transform: scale(1.1);
+}
 
 /*------ PRODUCT DESCRIPTION LARGER SCREEN ------*/
 @media screen and (min-width: 65em) {

@@ -74,3 +74,21 @@ document.addEventListener('keydown', (e) => {
         dialog.close();
     }
 });
+
+// -------- WISHLIST BUTTON --------
+// -------- WISHLIST BUTTON --------
+const wishlistButton = document.querySelector('button[data-wishlist]');
+
+wishlistButton.addEventListener('click', () => {
+  const img = wishlistButton.querySelector('img');
+  const isInWishlist = wishlistButton.dataset.wishlist === 'true';
+  console.log("in wishlist: ");
+
+  // Toggle the wishlist state
+  wishlistButton.dataset.wishlist = !isInWishlist;
+  
+  // Change the icon source
+  img.src = isInWishlist 
+    ? 'images/icons/bookmark.png'
+    : 'images/icons/bookmark-fill.png';
+});
