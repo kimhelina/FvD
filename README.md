@@ -22,7 +22,7 @@ rood
 
 #### Je focus:
 
-responsive (als er nog tijd over is ook service)
+surface plane!
 
 </details>
 
@@ -176,6 +176,10 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+- Er zijn geen aria labels voor de sommige buttons
+- De screenreader geeft geen waarschuwing bij het navigeren naar de footer
++ De tabindex werkt goed
++ De buttons met aira-labels leest de screenreader goed
 
 </details>
 
