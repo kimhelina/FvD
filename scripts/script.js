@@ -138,6 +138,7 @@ window.onresize = function (event) {
   }
 };
 
+
 // Video sound toggle functionality
 const video = document.querySelector('video');
 const soundToggle = document.querySelector('section:has(video) button');

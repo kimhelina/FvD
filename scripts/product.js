@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateCarousel() {
     const offset = -currentIndex * 100;
     carouselContainer.style.transform = `translateX(${offset}%)`;
-
+    
     // Add accessibility attributes
     images.forEach((image, index) => {
       image.setAttribute('aria-hidden', index === currentIndex ? 'false' : 'true');
