@@ -76,7 +76,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 // -------- WISHLIST BUTTON --------
-// -------- WISHLIST BUTTON --------
 const wishlistButton = document.querySelector('button[data-wishlist]');
 
 wishlistButton.addEventListener('click', () => {
@@ -92,3 +91,67 @@ wishlistButton.addEventListener('click', () => {
     ? 'images/icons/bookmark.png'
     : 'images/icons/bookmark-fill.png';
 });
+
+// TASTING NOTES CAROUSEL
+const scrollDuration = 50; // Reduced duration for faster response
+const ul = document.querySelector("details ul");
+const cards = ul.querySelectorAll("li");
+const cardWidth = cards[0].offsetWidth; // Assuming all cards have the same width
+const gap = parseInt(getComputedStyle(ul).gap); // Gap between cards from CSS
+const totalCards = cards.length;
+
+document.querySelectorAll("button[data-direction]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const direction = button.dataset.direction;
+    const scrollLeft = ul.scrollLeft;
+    const visibleWidth = ul.offsetWidth;
+
+    // Calculate next target based on direction
+    let targetScroll;
+    if (direction === "right") {
+      const maxScroll = ul.scrollWidth - visibleWidth;
+
+      // Wrap-around logic for next
+      if (scrollLeft + visibleWidth >= ul.scrollWidth - 1) {
+        targetScroll = 0; // Jump to the first card
+      } else {
+        targetScroll = scrollLeft + cardWidth + gap;
+      }
+    } else if (direction === "left") {
+      // Wrap-around logic for previous
+      if (scrollLeft <= 0) {
+        targetScroll = ul.scrollWidth - visibleWidth; // Jump to the last card
+      } else {
+        targetScroll = scrollLeft - (cardWidth + gap);
+      }
+    }
+
+    animateScroll(ul, targetScroll);
+  });
+});
+
+// Animation function
+function animateScroll(container, targetScroll) {
+  const startScroll = container.scrollLeft;
+  const distance = targetScroll - startScroll;
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = timestamp - startTime;
+    const percentage = Math.min(progress / scrollDuration, 1);
+
+    // Immediate fast start with ease-out
+    const easeOut = percentage < 0.3
+      ? percentage * 3 // Start fast in the first 30% of the duration
+      : 1 - Math.pow(1 - percentage, 3); // Ease out for the rest
+
+    container.scrollLeft = startScroll + distance * easeOut;
+
+    if (progress < scrollDuration) {
+      requestAnimationFrame(step);
+    }
+  }
+
+  requestAnimationFrame(step);
+}
