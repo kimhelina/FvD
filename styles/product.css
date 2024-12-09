@@ -301,36 +301,36 @@ button[data-wishlist="true"] img {
 }
 
 /* DESCRIPTIONS */
-details {
+main details {
   padding: 2.2em 1em;
   border-top: 0.5px solid var(--light-grey);
   position: relative;
   cursor: pointer;
 }
 
-details img {
+main details img {
   width: 10em;
 }
-details[open] {
+main details[open] {
   height: auto;
 }
-summary {
+main summary {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-details summary h2 {
+main details summary h2 {
   font-family: "MaloneSerif", "Times New Roman", Times, serif;
   color: var(--color-text);
   font-size: 1.2em;
 }
 
 /* TASTING NOTES CARDS */
-details section {
+main details section {
   display: flex;
   flex-direction: row;
 }
-details ul {
+main details ul {
   display: flex;
   list-style: none;
   gap: 3.5em;
@@ -341,23 +341,23 @@ details ul {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-details ul li {
+main details ul li {
   width: 80%;
   flex: 1 1 auto;
 }
-details li {
+main details li {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
-details section {
+main details section {
   display: flex;
   flex-direction: row;
   position: relative; /* Make sure the parent has relative positioning */
   width: 100%;
 }
 
-details ul {
+main details ul {
   display: flex;
   list-style: none;
   gap: 3.5em;
@@ -368,12 +368,12 @@ details ul {
   scrollbar-width: none;
 }
 
-details ul li {
+main details ul li {
   width: 80%; /* You may want to adjust the width of the cards */
   flex: 1 1 auto;
 }
 
-details section button {
+main details section button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,34 +386,34 @@ details section button {
   border: none; /* Remove any border styles */
 }
 
-details section button img.icon {
+main details section button img.icon {
   width: 2em; /* Adjust size of the button icon */
   height: auto;
 }
 
 /* Position left button */
-details section button[data-direction="left"] {
+main details section button[data-direction="left"] {
   left: 0; /* Position the left button to the left */
 }
 
 /* Position right button */
-details section button[data-direction="right"] {
+main details section button[data-direction="right"] {
   right: 0; /* Position the right button to the right */
 }
 
-details[open] > summary + section {
+main details[open] > summary + section {
   position: relative;
   height: auto;
   overflow-y: auto;
 }
 
 /* OPEN ARROW */
-details[open] summary img.icon {
+main details[open] summary img.icon {
   transform: rotate(0deg);
 }
 
 /* CLOSED ARROW */
-details summary img.icon {
+main details summary img.icon {
   transition: transform 0.3s ease;
   transform: rotate(-90deg);
 }

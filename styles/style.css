@@ -257,11 +257,46 @@ nav li a {
 }
 
 /* nav details */
-nav li details {
+nav li > details {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  cursor: pointer;
 }
+nav li > details summary{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+nav li > details summary img{
+  rotate: 90deg;
+}
+/* checkbox styling */
+nav details label{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+nav input[type="checkbox"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+
+  font: inherit;
+  color: var(--color-text);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--color-text);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+navinput[type="checkbox"]:checked {
+  background-size: cover;
+  background-color: var(--light-grey);
+}
+
 
 
 /****************/
