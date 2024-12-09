@@ -153,8 +153,8 @@ samen met je groepje opstellen
 
 | Helina         | Ivy                |
 | -------------- | ------------------ |
-| dit bespreken  | en dit             |
-| en dat ook nog | dit als er tijd is |
+| Ik wil over light en darkmode hebben.  | Er is een error bij de github           |
+| Soms verandert hij goed, en soms werkt de kleuren niet. | |
 | ...            | ...                |
 
 ### Verslag van meeting
