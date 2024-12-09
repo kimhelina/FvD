@@ -52,12 +52,44 @@
         <li><a href="#">account</a></li>
         <li><a href="#">wishlist</a></li>
         <li><a href="#">bag</a></li>
+
+        <!-- custome theme -->
         <li>
-          <!-- snow toggle -->
-          <label>
-            <input type="checkbox">
-            Let it snow! ❄️
-          </label>
+          <details>
+            <summary>
+              Choose your own theme
+            </summary>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="christmas">
+                  Christmas
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="high-contrast">
+                  Hgih Contrast
+                </label>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <details>
+          <summary>
+            Accessibility
+          </summary>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="accessibility" value="font-size">
+                Larger Text
+              </label>
+            </li>
+          </ul>
+        </details><!-- for accesibility -->
+        <li>
+          <button aria-label="close theme">X</button>
         </li>
       </ul>
     </nav>
@@ -184,7 +216,10 @@
 
       <!-- engraving input -->
       <input placeholder="First Line" type="text" maxlength="20">
+      <p class="char-counter">0/20 characters</p>
+
       <input placeholder="Second Line (optional)" type="text" maxlength="10">
+      <p class="char-counter">0/10 characters</p>
 
       <ul>
         <li>

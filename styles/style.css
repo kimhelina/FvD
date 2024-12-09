@@ -45,8 +45,28 @@
   --color-background: light-dark(#fcf9ee, #1f1f1f);
   --white: light-dark(#fff, #1c1c1c);
   --button-bg: light-dark (#dbdbdb, #414141);
+  --border-color: light-dark(#1c1c1c, #fff);
   --accent-color: #f4d03f;
   --light-grey: #a7a7a7;
+}
+/* ------custom themes ------ */
+/* christmas */
+:root:has([value="christmas"]:checked) {
+  --color-background: #f6eec9;
+  --border-color: #a20a0a;
+  --light-grey: #799351;
+  --button-bg: #b0d0a4;
+}
+/* high contrast */
+:root:has([value="christmas"]:checked) {
+  --color-background: #f6eec9;
+  --border-color: #a20a0a;
+  --light-grey: #799351;
+  --button-bg: #b0d0a4;
+}
+/* font size */
+:root:has([value="font-size"]:checked) {
+  font-size: 1.5rem;
 }
 @media (prefers-color-scheme: dark) {
   .icon {
@@ -236,6 +256,12 @@ nav li a {
   text-transform: uppercase;
 }
 
+/* nav details */
+nav li details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
 
 
 /****************/

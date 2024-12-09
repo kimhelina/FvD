@@ -73,13 +73,37 @@ dialog.addEventListener("click", (e) => {
   }
 });
 
+//-------- CHARACTER COUNTER FOR DIALOG --------
+document.addEventListener("DOMContentLoaded", function() {
+    const inputs = document.querySelectorAll("dialog input[type='text']");
+    
+    inputs.forEach(input => {
+        const counter = input.nextElementSibling;
+        const maxLength = input.getAttribute('maxlength');
+
+        // Initial counter state
+        counter.textContent = `0/${maxLength} characters`;
+
+        // Update counter on input
+        input.addEventListener('input', () => {
+            const currentLength = input.value.length;
+            counter.textContent = `${currentLength}/${maxLength} characters`;
+            
+            if (currentLength >= maxLength) {
+                counter.style.color = 'red';
+            } else {
+                counter.style.color = ''; 
+            }
+        });
+    });
+});
+
 // -------- WISHLIST BUTTON --------
 const wishlistButton = document.querySelector("button[data-wishlist]");
 
 wishlistButton.addEventListener("click", () => {
   const img = wishlistButton.querySelector("img");
   const isInWishlist = wishlistButton.dataset.wishlist === "true";
-  console.log("in wishlist: ");
 
   // Toggle the wishlist state
   wishlistButton.dataset.wishlist = !isInWishlist;

@@ -249,8 +249,15 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. bron 1
-2. bron 2
+1. Iconen:
+gift icon: https://www.flaticon.com/free-icon/gift_658015?term=present&page=1&position=13&origin=tag&related_id=658015
+perfume icon: https://www.flaticon.com/free-icon/cologne_3118526?term=perfume&page=1&position=86&origin=search&related_id=3118526
+car icon:  https://www.flaticon.com/free-icon/delivery-car_7615749?term=delivery&page=1&position=39&origin=search&related_id=7615749
+
+
+2. script.js
+   voor header: https://stackoverflow.com/questions/63902512/js-show-hide-header-on-scroll-effect-but-only-after-the-header-has-scrolled
+
 3. ...
 
 </details>

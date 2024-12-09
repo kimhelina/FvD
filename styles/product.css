@@ -93,10 +93,10 @@ main section:nth-of-type(3) li:nth-of-type(2) {
   font-family: inherit;
   font-weight: 300;
   padding: 1em auto;
-  border: 0.05em solid var(--color-text);
+  border: 0.05em solid var(--border-color);
 }
 main section:nth-of-type(3) button:active {
-  border: 0.05em solid var(--color-text);
+  border: 0.05em solid var(--border-color);
 }
 /* DARKMODE FOR PERFUMESIZE BUTTONS */
 @media (prefers-color-scheme: dark) {
@@ -118,7 +118,7 @@ main > button:nth-of-type(1) {
   background-color: var(--color-text);
   color: var(--white);
 
-  border: var(--color-text) solid 0.1em;
+  border: var(--border-color) solid 0.1em;
 
   font-family: "LarsMalone";
   font-weight: 300;
@@ -216,6 +216,24 @@ dialog[open] {
   100% {
     opacity: 1;
   }
+}
+
+/* dialog character counter */
+dialog .char-counter {
+    font-size: 0.8em;
+    color: var(--light-grey);
+    margin: -0.5em 0 1em 0;
+    text-align: right;
+}
+
+/* Optional: Style for when reaching character limit */
+dialog .char-counter.limit {
+    color: red;
+}
+
+/* Adjust input spacing */
+dialog input[type="text"] {
+    margin-bottom: 0.5em;
 }
 
 /* Prevent scrolling when dialog is open */
