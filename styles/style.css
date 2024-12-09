@@ -77,6 +77,10 @@
     filter: invert(1);
     transition: 0.5s ease-in-out;
   }
+  header img{
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+  }
 }
 
 /****************/
