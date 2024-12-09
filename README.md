@@ -161,10 +161,9 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Goed op de spaties letten bij de :root
+- Github op de hoogte houden
+- Later testen met github en screenreader
 
 </details>
 
@@ -201,20 +200,19 @@ samen met je groepje opstellen
 - Wat we moeten doen voor een voldoende
 - Hoe worden de codes beoordeeld?
 
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Helina    | Milo         | 
+| -------------- | ------------------ | 
+| Hoe kan ik met checkbox custom theme maken?  | Responsive header maken         | 
+| en dat ook nog | dit als er tijd is | 
+| ...            | ...                | 
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- gebruik :root voor de kleuren veranderen van de custom property 
+- value van de checkbox goed gebruiken voor het selecteren van custom theme
+
 
 </details>
 

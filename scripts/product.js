@@ -133,8 +133,8 @@ wishlistButton.addEventListener("click", () => {
 
 //-------- TASTING NOTES CAROUSEL
 const scrollDuration = 50;
-const ul = document.querySelector("details ul");
-const cards = ul.querySelectorAll("main details ul li ");
+const ul = document.querySelector("details section ul");
+const cards = ul.querySelectorAll("li");
 const cardWidth = cards[0].offsetWidth;
 const gap = parseInt(getComputedStyle(ul).gap);
 const totalCards = cards.length;
