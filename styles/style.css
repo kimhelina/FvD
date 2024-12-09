@@ -48,6 +48,10 @@
   --border-color: light-dark(#1c1c1c, #fff);
   --accent-color: #f4d03f;
   --light-grey: #a7a7a7;
+
+  --input-after: light-dark(#f0f0f0, #3a3a3a);
+
+  --focus-color: #d20000;
 }
 /* ------custom themes ------ */
 /* christmas */
@@ -78,6 +82,9 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+*:focus {
+  outline: 0.2em dotted var(--focus-color);
+}
 
 body {
   padding-top: 5em; 

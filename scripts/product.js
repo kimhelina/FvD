@@ -84,15 +84,32 @@ document.addEventListener("DOMContentLoaded", function() {
         // Initial counter state
         counter.textContent = `0/${maxLength} characters`;
 
-        // Update counter on input
+        // Update counter and background on input
         input.addEventListener('input', () => {
             const currentLength = input.value.length;
             counter.textContent = `${currentLength}/${maxLength} characters`;
             
+            // Add background color if input has value
+            if (currentLength > 0) {
+                input.style.backgroundColor = 'var(--input-after)';
+            } else {
+                input.style.backgroundColor = ''; // Reset to default
+            }
+
+            // Optional: Add visual feedback when approaching limit
             if (currentLength >= maxLength) {
                 counter.style.color = 'red';
             } else {
-                counter.style.color = ''; 
+                counter.style.color = ''; // Reset to default color
+            }
+        });
+
+        // Also check on blur (when input loses focus)
+        input.addEventListener('blur', () => {
+            if (input.value.length > 0) {
+                input.style.backgroundColor = 'var(--input-after)';
+            } else {
+                input.style.backgroundColor = '';
             }
         });
     });
@@ -117,7 +134,7 @@ wishlistButton.addEventListener("click", () => {
 //-------- TASTING NOTES CAROUSEL
 const scrollDuration = 50;
 const ul = document.querySelector("details ul");
-const cards = ul.querySelectorAll("li");
+const cards = ul.querySelectorAll("main details ul li ");
 const cardWidth = cards[0].offsetWidth;
 const gap = parseInt(getComputedStyle(ul).gap);
 const totalCards = cards.length;
