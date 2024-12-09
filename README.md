@@ -176,10 +176,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
 - Er zijn geen aria labels voor de sommige buttons
 - De screenreader geeft geen waarschuwing bij het navigeren naar de footer
-+ De tabindex werkt goed
-+ De buttons met aira-labels leest de screenreader goed
+
+* De tabindex werkt goed
+* De buttons met aira-labels leest de screenreader goed
 
 </details>
 
@@ -195,6 +197,9 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 
 samen met je groepje opstellen
+
+- Wat we moeten doen voor een voldoende
+- Hoe worden de codes beoordeeld?
 
 | student 1      | student 2          | student 3    | student 4        |
 | -------------- | ------------------ | ------------ | ---------------- |

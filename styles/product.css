@@ -9,9 +9,8 @@ section h2 {
   font-weight: 200;
 }
 
-h4{
+h4 {
   display: flex;
-  
 }
 
 /* BUTTONS */
@@ -33,7 +32,6 @@ main section:nth-of-type(1) {
   justify-content: start;
   padding: 2em 0 2em 0;
 }
-
 
 /* REVIEWS */
 main section:nth-of-type(2) {
@@ -88,7 +86,7 @@ main section:nth-of-type(3) li {
   padding: 0.1em 1em;
 }
 main section:nth-of-type(3) li:hover {
-  filter:saturate(0.2);
+  filter: saturate(0.2);
 }
 /* default selected button */
 main section:nth-of-type(3) li:nth-of-type(2) {
@@ -101,7 +99,7 @@ main section:nth-of-type(3) button:active {
   border: 0.05em solid var(--color-text);
 }
 /* DARKMODE FOR PERFUMESIZE BUTTONS */
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
   main section:nth-of-type(3) li {
     background-color: var(--button-bg);
     opacity: 0.5;
@@ -154,6 +152,7 @@ dialog {
 dialog::backdrop {
   background-color: var(--color-text);
   opacity: 0.5;
+  backdrop-filter: blur(10px);
 }
 
 /* Target the close button */
@@ -176,7 +175,7 @@ dialog input {
   padding: 0.8em;
 }
 /* button stlying */
-dialog button:nth-last-of-type(2){
+dialog button:nth-last-of-type(2) {
   font-family: inherit;
   text-decoration: underline;
 }
@@ -211,10 +210,10 @@ dialog[open] {
   animation: fadein 0.2s ease-in forwards;
 }
 @keyframes fadein {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -302,7 +301,7 @@ summary {
   flex-direction: row;
   justify-content: space-between;
 }
-details summary h2{
+details summary h2 {
   font-family: "MaloneSerif", "Times New Roman", Times, serif;
   color: var(--color-text);
   font-size: 1.2em;
@@ -383,7 +382,6 @@ details section button[data-direction="left"] {
 details section button[data-direction="right"] {
   right: 0; /* Position the right button to the right */
 }
-
 
 details[open] > summary + section {
   position: relative;

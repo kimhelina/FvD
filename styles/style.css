@@ -44,7 +44,7 @@
   --color-text: light-dark(#1c1c1c, #fff);
   --color-background: light-dark(#fcf9ee, #1f1f1f);
   --white: light-dark(#fff, #1c1c1c);
-  --button-bg: light-dark (#f7f4e9, #414141);
+  --button-bg: light-dark (#dbdbdb, #414141);
   --accent-color: #f4d03f;
   --light-grey: #a7a7a7;
 }
