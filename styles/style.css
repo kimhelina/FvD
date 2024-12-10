@@ -156,7 +156,7 @@ header {
   width: 100%;
   list-style-type: none;
 
-  position: fixed; /* Change from sticky to fixed */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
