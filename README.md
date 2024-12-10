@@ -222,14 +222,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
   <summary>uitwerken voor eindgesprek</summary>
 
 ### Je uitkomst - karakteristiek screenshots:
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/week5/index.png">
+  <img src="readme-images/week5/tastingnotes.png">
+  
 ### Dit ging goed/Heb ik geleerd:
 
-Korte omschrijving met plaatjes
+  <img src="readme-images/week5/dialog.png">
+  Ik ben super blij met dialoog van mijn pagina. In de dialog zit een character counter voor de input field. Dankzij bron is het gelukt. Na dat ik de brond zag, snapte ik hoe ik de code moest aanpakken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 ### Dit was lastig/Is niet gelukt:
 
@@ -248,18 +248,19 @@ Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
 1. Iconen:
-gift icon: https://www.flaticon.com/free-icon/gift_658015?term=present&page=1&position=13&origin=tag&related_id=658015
-perfume icon: https://www.flaticon.com/free-icon/cologne_3118526?term=perfume&page=1&position=86&origin=search&related_id=3118526
-car icon:  https://www.flaticon.com/free-icon/delivery-car_7615749?term=delivery&page=1&position=39&origin=search&related_id=7615749
-mic icon: https://www.flaticon.com/free-icon/microphone_107737?term=mic&page=1&position=9&origin=search&related_id=107737
-pause icon: https://www.flaticon.com/free-icon/pause_2404385?term=pause&page=1&position=21&origin=search&related_id=2404385
-play icon: https://www.flaticon.com/free-icon/play_3024584?term=play&page=1&position=8&origin=search&related_id=3024584
+- gift icon: https://www.flaticon.com/free-icon/gift_658015?term=present&page=1&  position=13&origin=tag&related_id=658015
+- perfume icon: https://www.flaticon.com/free-icon/cologne_3118526?term=perfume&page=1&position=86&origin=search&related_id=3118526
+- car icon:  https://www.flaticon.com/free-icon/delivery-car_7615749?term=delivery&page=1&position=39&origin=search&related_id=7615749
+-  mic icon: https://www.flaticon.com/free-icon/microphone_107737?term=mic&page=1&position=9&origin=search&related_id=107737
+- pause icon: https://www.flaticon.com/free-icon/pause_2404385?term=pause&page=1&position=21&origin=search&related_id=2404385
+- play icon: https://www.flaticon.com/free-icon/play_3024584?term=play&page=1&position=8&origin=search&related_id=3024584
 
 2. script.js
    voor header: https://stackoverflow.com/questions/63902512/js-show-hide-header-on-scroll-effect-but-only-after-the-header-has-scrolled
 
 3. product.js:
-    voor character counter: ChatGpt prompt: "how to create a character counter for a text input in javascript"
+    voor character counter: ChatGpt prompt:
+    "how to create a character counter for a text input in javascript"
 
 4. christmas music: https://www.youtube.com/watch?v=2j9LjgdF-gQ
 
