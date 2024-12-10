@@ -35,6 +35,11 @@ main section {
 }
 
 /* BLACK FRIDAY BANNER */
+main section:nth-of-type(1){
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 main section:nth-of-type(1) img {
   position: relative;
   z-index: -2;
@@ -113,49 +118,6 @@ main section:nth-of-type(2) > ul:first-of-type li:nth-child(3) {
   }
 }
 
-/* Breadcrumb styling */
-main section:nth-of-type(2) > ul:last-of-type {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  justify-content: center;
-  align-items: center;
-}
-
-main section:nth-of-type(2) > ul:last-of-type a {
-  display: block;
-  width: 0.3em;
-  height: 0.3em;
-  border-radius: 50%;
-  background: var(--light-grey);
-  text-indent: -9999px;
-  animation: indicator 9s infinite;
-}
-
-/* Animation timing for indicators */
-main section:nth-of-type(2) > ul:last-of-type li:nth-child(1) a {
-  animation-delay: 0s;
-}
-
-main section:nth-of-type(2) > ul:last-of-type li:nth-child(2) a {
-  animation-delay: 3s;
-}
-
-main section:nth-of-type(2) > ul:last-of-type li:nth-child(3) a {
-  animation-delay: 6s;
-}
-
-@keyframes indicator {
-  0%, 26% {
-    background: var(--color-text);
-  }
-  33%, 93% {
-    background: var(--light-grey);
-  }
-  100% {
-    background: var(--light-grey);
-  }
-}
 
 /*------ LIST OF BANNERS ------*/
 main ul {
