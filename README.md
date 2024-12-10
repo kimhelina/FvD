@@ -261,6 +261,42 @@ play icon: https://www.flaticon.com/free-icon/play_3024584?term=play&page=1&posi
 3. product.js:
     voor character counter: ChatGpt prompt: "how to create a character counter for a text input in javascript"
 
-3. christmas music: https://www.youtube.com/watch?v=2j9LjgdF-gQ
+4. christmas music: https://www.youtube.com/watch?v=2j9LjgdF-gQ
+
+5. Search bar: ChatGpt prompt: "I want to add a new feature. now the input field next to the search icon is visible. i want to make it hidden, and when the search icon is clicked, i want to show something over the screen. The html that will be shown over the screen will have the same background colour as the main background colour, and it will have an input field in there. i will call this html searchPopUp. behind search pop up, the page will be greyed out (darkened). the search pop up also has a cross button on the top right corner, which when clicked dismisses the search pop up. can you make this functionality? if i need to add something to my css, please tell me that as well."
+<img src="readme-images/sourceIMG/serachbar-1.png">
+<img src="readme-images/sourceIMG/serachbar-2.png">
+<img src="readme-images/sourceIMG/serachbar-3.png">
+
+  "Lets avoid using ids. Can we do this without classes and ids in html?"
+  <img src="readme-images/sourceIMG/serachbar-4.png">
+  <img src="readme-images/sourceIMG/serachbar-5.png">
+  <img src="readme-images/sourceIMG/serachbar-6.png">
+
+  "great! this works. let me tell you how the search pop up should look like in a bit more detail.
+It fills up the whole screen with no round corners, except that it leaves about 10% of the screen size on the bottom.
+the cross button has a bit of padding around.
+the input field is right underneath the cross button. At the rightmost end of the input field is a button. lets use any image for this for now.
+underneath the seach bar, after some space, there is a text "NEED A LITTLE INSPIRATION?" center-aligned. underneath that text, there is a button where users can navigate: it has a button in the middle, and arrows on the left and right of the button, which when clicked, shows the next or previous button in the middle with sliding animations. the texts in these buttons could be A,B,C,D, and E for now. please make the necessary changes."
++ "the option button is not in the middle. the a, b, c, d, and e buttons should be in the middle with the arrow buttons being on the sides. 
+also, i want the input field to be a bit taller and wider.
+i also need more space between the input field and the "need a little inspiration?" part should have some space in the middle.
+
+lastly, lets make our search pop up 100% of the screen."
++ "how can i align this button to the middle?
+/* Option Button */
+section[aria-hidden] > div:nth-of-type(2) > div[role="navigation"] > button:nth-of-type(2) {
+  border: none; 
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  background: var(--button-bg);
+  color: var(--color-background);
+  cursor: pointer;
+}"
++ "how can change the font colour of the text inside a button or the placeholder for text input?"
++ "these are the texts for buttons. can you replace the A B C D E with these?
+["COMPLIMENTARY FESTIVE DUO", "12 DAY ADVENT CALENDAR", 
+    "GINGER BISCUIT", "ORANGE BITTERS","FIR & ARTEMISIA", "HINOKI & CEDARWOOD", 
+    "CHRISTMAS GIFTS", "HOME & CANDLES", "COLOGNES", "GIFTS FOR HER", "GIFTS FOR HIM"];"
 
 </details>

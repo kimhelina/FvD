@@ -1,4 +1,5 @@
 //------------ HEADER HIDE & SHOW SCROLLING------------//
+// source nr.2 using stackoverflow
 let lastScrollPosition = 0;
 
 function handleScroll() {
@@ -70,6 +71,7 @@ document.addEventListener("click", (event) => {
 });
 
 // ---------- SEARCH ----------------//
+// source nr.5 using chatGPT
 document.addEventListener("DOMContentLoaded", () => {
   const searchButton = document.querySelector("button[aria-label='Search']");
   const closeButton = document.querySelector(
@@ -83,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "section[role='navigation'] > button:nth-of-type(2)"
   );
 
-  //얘네 html 에 쓸 수 있는지 지피티한테 물어보기
   const options = [
     "COMPLIMENTARY FESTIVE DUO",
     "12 DAY ADVENT CALENDAR",

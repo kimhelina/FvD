@@ -331,6 +331,7 @@ nav input[type="checkbox"]:checked {
 
 /****************/
 /* Search Pop-Up General */
+/* SOURCE nr.5 using chatGPT */
 /****************/
 section[aria-hidden="true"] {
   display: none;
@@ -487,7 +488,7 @@ section[aria-hidden]
   > section:nth-of-type(2)
   > section[role="navigation"]
   > button:nth-of-type(2) {
-  border: 1px solid lightgrey;
+  border: 0.1em solid lightgrey;
   padding: 0.5em 1.5em;
   font-size: 1rem;
   cursor: pointer;

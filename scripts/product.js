@@ -87,7 +87,7 @@ dialog.addEventListener("click", (e) => {
 });
 
 //-------- CHARACTER COUNTER FOR DIALOG --------
-// source: chatGpt
+// source nr.3 using chatGPT
 document.addEventListener("DOMContentLoaded", function() {
     const inputs = document.querySelectorAll("dialog input[type='text']");
     
