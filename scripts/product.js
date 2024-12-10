@@ -40,6 +40,23 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCarousel();
 });
 
+// -------- PERFUME SIZE BUTTONS --------
+document.addEventListener("DOMContentLoaded", function() {
+  const liElements = document.querySelectorAll("main section:nth-of-type(3) li");
+
+  liElements.forEach((li) => {
+    const button = li.querySelector("button");
+  
+    button.addEventListener("click", () => {
+      // Remove aria-pressed="true" from all li elements
+      liElements.forEach((el) => el.setAttribute("aria-pressed", "false"));
+  
+      // Set aria-pressed="true" on the clicked li
+      li.setAttribute("aria-pressed", "true");
+    });
+  });
+});
+
 //-------- DIALOG --------
 document.addEventListener("DOMContentLoaded", function () {
   const engraveButton = document.querySelector("main > button:nth-of-type(2)");
@@ -93,14 +110,14 @@ document.addEventListener("DOMContentLoaded", function() {
             if (currentLength > 0) {
                 input.style.backgroundColor = 'var(--input-after)';
             } else {
-                input.style.backgroundColor = ''; // Reset to default
+                input.style.backgroundColor = ''; 
             }
 
             // Optional: Add visual feedback when approaching limit
             if (currentLength >= maxLength) {
                 counter.style.color = 'red';
             } else {
-                counter.style.color = ''; // Reset to default color
+                counter.style.color = ''; 
             }
         });
 
@@ -116,8 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // -------- WISHLIST BUTTON --------
-const wishlistButton = document.querySelector("button[data-wishlist]");
-
+const wishlistButton = document.querySelector("main section:nth-of-type(4) section button:nth-of-type(2)");
 wishlistButton.addEventListener("click", () => {
   const img = wishlistButton.querySelector("img");
   const isInWishlist = wishlistButton.dataset.wishlist === "true";
