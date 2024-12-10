@@ -148,6 +148,7 @@ main li a {
 /* INSPIRATION */
 
 /* Video section styling */
+/* Video section styling */
 main section:has(video) {
   position: relative;
 }
@@ -155,7 +156,6 @@ main section:has(video) {
 main section:has(video) button {
   position: absolute;
   bottom: 5em;
-  right: 1em;
   background: rgba(255, 255, 255, 0.7);
   border: none;
   border-radius: 50%;
@@ -163,18 +163,19 @@ main section:has(video) button {
   cursor: pointer;
 }
 
+/* Position the play/pause button */
+main section:has(video) button:first-of-type {
+  left: 1em;  
+}
+
+/* Position the sound button */
+main section:has(video) button:last-of-type {
+  right: 1em;
+}
+
 main section:has(video) button img {
   width: 1.5em;
   height: 1.5em;
-}
-
-/* PERSONALIZED GIFT */
-main section:last-of-type {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: 1em;
-  padding-bottom: 6em;
 }
 
 

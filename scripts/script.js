@@ -153,3 +153,17 @@ soundToggle.addEventListener('click', () => {
     'Volume mute icon' : 
     'Volume up icon';
 });
+
+const playPauseBtn = document.querySelector('section:has(video) button:first-of-type');
+
+playPauseBtn.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+    playPauseBtn.querySelector('img').src = 'images/icons/pause.png';
+    playPauseBtn.querySelector('img').alt = 'Pause icon';
+  } else {
+    video.pause();
+    playPauseBtn.querySelector('img').src = 'images/icons/play.png';
+    playPauseBtn.querySelector('img').alt = 'Play icon';
+  }
+});

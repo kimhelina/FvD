@@ -252,7 +252,8 @@ gift icon: https://www.flaticon.com/free-icon/gift_658015?term=present&page=1&po
 perfume icon: https://www.flaticon.com/free-icon/cologne_3118526?term=perfume&page=1&position=86&origin=search&related_id=3118526
 car icon:  https://www.flaticon.com/free-icon/delivery-car_7615749?term=delivery&page=1&position=39&origin=search&related_id=7615749
 mic icon: https://www.flaticon.com/free-icon/microphone_107737?term=mic&page=1&position=9&origin=search&related_id=107737
-
+pause icon: https://www.flaticon.com/free-icon/pause_2404385?term=pause&page=1&position=21&origin=search&related_id=2404385
+play icon: https://www.flaticon.com/free-icon/play_3024584?term=play&page=1&position=8&origin=search&related_id=3024584
 
 2. script.js
    voor header: https://stackoverflow.com/questions/63902512/js-show-hide-header-on-scroll-effect-but-only-after-the-header-has-scrolled
