@@ -97,7 +97,7 @@ Negatief
 
 ### de hele pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets/index.png">
 
 ### dynamisch deel (bijv menu):
 
@@ -233,9 +233,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatjes
+  <img src="readme-images/week5/textcarousel.png">
+  Ik heb de text carousel gemaakt, maar het is me niet gelukt nog om indicators te maken. De animaties werken goed, maar als ik de sync met de indicators wil maken, dan werkt het niet. Voor de volgende keer zal ik nogmaals goed naar de bron zoeken van indicators.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ik vond het ook nog lastig om de css code zonder classes en ids te schrijven. Ik heb de code geschreven met classes en ids, maar ik heb geleerd dat ik de code zonder classes en ids kan schrijven. Ik wil voor de volgende keer beter leren voor wanneer class en id wel of niet nodig zijn.
+
 </details>
 
 ## Bronnenlijst
