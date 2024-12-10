@@ -237,15 +237,15 @@ header :nth-child(8) {
 /* 		NAVBAR OPEN	 */
 /****************/
 nav {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-background);
-
   position: fixed;
   width: 86%;
   z-index: 1000;
   left: 0;
   top: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
 
   padding: 1em;
   overflow-y: auto;
@@ -264,11 +264,11 @@ nav ul {
   display: flex;
   flex-direction: column;
 
-  list-style: none;
-  text-align: left;
-
   gap: 1em;
   height: 100vh;
+
+  list-style: none;
+  text-align: left;
 }
 
 nav li a {
@@ -302,21 +302,22 @@ nav details label{
   align-items: center;
 }
 nav input[type="checkbox"]{
-  -webkit-appearance: none;
-  appearance: none;
   transform: translateY(-0.075em);
 
   margin: 0;
   width: 1.15em;
   height: 1.15em;
 
+  -webkit-appearance: none;
+  appearance: none;
+
+  border: 0.15em solid var(--color-text);
+  border-radius: 0.15em;
+
   background-color: var(--color-background);
 
   font: inherit;
   color: var(--color-text);
-
-  border: 0.15em solid var(--color-text);
-  border-radius: 0.15em;
 }
 nav input[type="checkbox"]:checked {
   background-size: cover;
@@ -342,9 +343,10 @@ section[aria-hidden] {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 1000;
+
   justify-content: center;
   align-items: flex-start;
-  z-index: 1000;
 }
 
 /* Background Overlay */
@@ -354,8 +356,9 @@ section[aria-hidden] > section:nth-of-type(1) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Pop-Up Container */
@@ -387,8 +390,9 @@ section[aria-hidden]
 
 /* Input Field and Button */
 section[aria-hidden] > section:nth-of-type(2) > form {
-  display: flex;
   position: relative;
+
+  display: flex;
   width: 100%;
   height: 55px;
   margin-top: 3rem;
