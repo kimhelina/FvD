@@ -251,6 +251,7 @@ Nb. Vermeld de bronnen ook in je code.
 gift icon: https://www.flaticon.com/free-icon/gift_658015?term=present&page=1&position=13&origin=tag&related_id=658015
 perfume icon: https://www.flaticon.com/free-icon/cologne_3118526?term=perfume&page=1&position=86&origin=search&related_id=3118526
 car icon:  https://www.flaticon.com/free-icon/delivery-car_7615749?term=delivery&page=1&position=39&origin=search&related_id=7615749
+mic icon: https://www.flaticon.com/free-icon/microphone_107737?term=mic&page=1&position=9&origin=search&related_id=107737
 
 
 2. script.js
