@@ -101,11 +101,17 @@ Negatief
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="readme-images/breakdownschets/navbar-open.png">
+- er is een overlay over de 80% van de pagina
+- er is een button om het menu te openen
+- er is geen button om het menu te sluiten
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="readme-images/breakdownschets/tastingnotes.png">
+- dropdown menu met buttons
+- er is een card carousel met 3 items
+  
 
 </details>
 
@@ -117,24 +123,34 @@ Negatief
 ### Stand van zaken
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het gaat goed:
+- ik heb algemene content van website in html geschreven
+- ik heb custom property gebruikt voor kleuren
+- alle benodigde foto's zijn toegevoegd
+
+Dit is lastig:
+- ik heb nog geen idee hoe ik de dropdown menu moet maken
+- ik heb nog geen idee hoe ik de card carousel moet maken
+- html elementen veranderen constant vergeleken met mijn breakdownschets
 
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1 | student 2          | student 3    | student 4        |
-| --------- | ------------------ | ------------ | ---------------- |
-| CSS       | De kleuren         | en ik dit    | en dan ik dat    |
-|           | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...       | ...                | ...          | ...              |
+| Helina | Ivy                | Milo    |
+| --------- | ------------------ | ------------ |
+| Algemene vragen over CSS     | Algemeen over CSS      | Algemeen over CSS    |
+| Mag je echt geen class of id gebruiken?  | nog een punt | |
+
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- Geen ID en Class
-- punt 2
-- nog een punt
+- Geen ID en Class gebruiken!
+- :nth-of-child() actiever gebruiken
+- custom property gebruiken voor kleuren
+- details en summary gebruiken voor de dropdown menu
 
 </details>
 
@@ -155,7 +171,6 @@ samen met je groepje opstellen
 | -------------- | ------------------ |
 | Ik wil over light en darkmode hebben.  | Er is een error bij de github           |
 | Soms verandert hij goed, en soms werkt de kleuren niet. | |
-| ...            | ...                |
 
 ### Verslag van meeting
 
@@ -182,6 +197,8 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 * De tabindex werkt goed
 * De buttons met aira-labels leest de screenreader goed
 
+* Je kan met control + option + u bij screenreader de pagina mode selecteren bijvoorbeeld alle headings/ links/ buttons/ etc.
+
 </details>
 
 ## Voortgang 3 (week 4)
@@ -203,8 +220,7 @@ samen met je groepje opstellen
 | Helina    | Milo         | 
 | -------------- | ------------------ | 
 | Hoe kan ik met checkbox custom theme maken?  | Responsive header maken         | 
-| en dat ook nog | dit als er tijd is | 
-| ...            | ...                | 
+
 
 ### Verslag van meeting
 
