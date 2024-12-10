@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCarousel();
   });
 
-  // Initialize carousel
   updateCarousel();
 });
 
@@ -48,10 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const button = li.querySelector("button");
   
     button.addEventListener("click", () => {
-      // Remove aria-pressed="true" from all li elements
       liElements.forEach((el) => el.setAttribute("aria-pressed", "false"));
   
-      // Set aria-pressed="true" on the clicked li
       li.setAttribute("aria-pressed", "true");
     });
   });
@@ -74,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Get dialog element
 const dialog = document.querySelector("dialog");
 
 // Close dialog when clicking outside
@@ -91,6 +87,7 @@ dialog.addEventListener("click", (e) => {
 });
 
 //-------- CHARACTER COUNTER FOR DIALOG --------
+// source: chatGpt
 document.addEventListener("DOMContentLoaded", function() {
     const inputs = document.querySelectorAll("dialog input[type='text']");
     

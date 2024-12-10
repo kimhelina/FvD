@@ -57,6 +57,8 @@
 /* christmas */
 :root:has([value="christmas"]:checked) {
   --color-background: #f6eec9;
+  --color-text: #1c1c1c;
+  --white: #fff;
   --border-color: #a20a0a;
   --light-grey: #799351;
   --button-bg: #b0d0a4;
@@ -73,6 +75,7 @@
 
   --focus-color: #ff0000;
 }
+
 /* font size */
 :root:has([value="font-size"]:checked) {
   font-size: 1.5rem;

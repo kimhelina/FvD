@@ -259,7 +259,7 @@ play icon: https://www.flaticon.com/free-icon/play_3024584?term=play&page=1&posi
    voor header: https://stackoverflow.com/questions/63902512/js-show-hide-header-on-scroll-effect-but-only-after-the-header-has-scrolled
 
 3. product.js:
-    voor character counter: 
+    voor character counter: ChatGpt prompt: "how to create a character counter for a text input in javascript"
 
 3. christmas music: https://www.youtube.com/watch?v=2j9LjgdF-gQ
 
