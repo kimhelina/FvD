@@ -161,7 +161,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+#Wat ging er goed
+- De pagina layout is goed gemaakt met gebruik van flexbox.
+- Het maken van footer is goed gegaan. Ik kond de accentkleur toepassen wat ik had geleerd tijdens de werkcollege.
+<img src="readme-images/footer.png">
+
+#Wat was er nog lastig
+- Het is nog lastig om dark en light mode te maken met custom property. Soms werkt het wel en soms niet.
+- Het kost veel tijd om een pagina af te maken, dus ik ben bang dat ik later niet genoeg tijd heb voor de tweede pagina.
+- Ik vind het lastig voor wanneer grid nodig is en voor wanneer flexbox.
+- De card carousel is nog lastig om te maken.
 
 ### Agenda voor meeting
 
@@ -245,6 +254,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
   <img src="readme-images/week5/dialog.png">
   Ik ben super blij met dialoog van mijn pagina. In de dialog zit een character counter voor de input field. Dankzij bron is het gelukt. Na dat ik de brond zag, snapte ik hoe ik de code moest aanpakken.
+
+  Verder heb ik tijdens de frot-end development geleerd hoe specifiek css selectors kon gebruiken. Hiervoor wist ik niet dat ik de :nth-of-type() kon gebruiken. 
 
 
 ### Dit was lastig/Is niet gelukt:
