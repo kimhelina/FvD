@@ -4,23 +4,23 @@ let lastScrollPosition = 0;
 
 function handleScroll() {
   const currentScrollPosition = window.scrollY;
-  const header = document.querySelector('header');
-  
+  const header = document.querySelector("header");
+
   // Determine scroll direction
   if (currentScrollPosition > lastScrollPosition) {
     // Scrolling down
-    header.style.transform = 'translateY(-100%)';
+    header.style.transform = "translateY(-100%)";
   } else {
     // Scrolling up
-    header.style.transform = 'translateY(0)';
+    header.style.transform = "translateY(0)";
   }
-  
+
   lastScrollPosition = currentScrollPosition;
 }
 
 // Add scroll event listener with throttling for better performance
 let ticking = false;
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   if (!ticking) {
     window.requestAnimationFrame(() => {
       handleScroll();
@@ -139,32 +139,31 @@ window.onresize = function (event) {
   }
 };
 
-
 // Video sound toggle functionality
-const video = document.querySelector('video');
-const soundToggle = document.querySelector('section:has(video) button');
-const soundIcon = soundToggle.querySelector('img');
+const video = document.querySelector("video");
+const soundToggle = document.querySelector("section:has(video) button");
+const soundIcon = soundToggle.querySelector("img");
 
-soundToggle.addEventListener('click', () => {
+soundToggle.addEventListener("click", () => {
   video.muted = !video.muted;
-  soundIcon.src = video.muted ? 
-    'images/icons/volume-mute.png' : 
-    'images/icons/volume-up.png';
-  soundIcon.alt = video.muted ? 
-    'Volume mute icon' : 
-    'Volume up icon';
+  soundIcon.src = video.muted
+    ? "images/icons/volume-mute.png"
+    : "images/icons/volume-up.png";
+  soundIcon.alt = video.muted ? "Volume mute icon" : "Volume up icon";
 });
 
-const playPauseBtn = document.querySelector('section:has(video) button:first-of-type');
+const playPauseBtn = document.querySelector(
+  "section:has(video) button:first-of-type"
+);
 
-playPauseBtn.addEventListener('click', () => {
+playPauseBtn.addEventListener("click", () => {
   if (video.paused) {
     video.play();
-    playPauseBtn.querySelector('img').src = 'images/icons/pause.png';
-    playPauseBtn.querySelector('img').alt = 'Pause icon';
+    playPauseBtn.querySelector("img").src = "images/icons/pause.png";
+    playPauseBtn.querySelector("img").alt = "Pause icon";
   } else {
     video.pause();
-    playPauseBtn.querySelector('img').src = 'images/icons/play.png';
-    playPauseBtn.querySelector('img').alt = 'Play icon';
+    playPauseBtn.querySelector("img").src = "images/icons/play.png";
+    playPauseBtn.querySelector("img").alt = "Play icon";
   }
 });
