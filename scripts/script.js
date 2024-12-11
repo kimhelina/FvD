@@ -141,7 +141,9 @@ window.onresize = function (event) {
 
 // Video sound toggle functionality
 const video = document.querySelector("video");
-const soundToggle = document.querySelector("section:has(video) button");
+const soundToggle = document.querySelector(
+  "main section:has(video) button:last-of-type"
+);
 const soundIcon = soundToggle.querySelector("img");
 
 soundToggle.addEventListener("click", () => {
